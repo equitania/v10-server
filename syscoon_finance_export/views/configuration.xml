@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_export_configuration_view" model="ir.ui.view">
+            <field name="name">view.export.configuration.view</field>
+            <field name="model">export.configuration</field>
+            <field name="arch" type="xml">
+                <form string="Export Configuration">
+                    <sheet>
+                        <div>
+                            <h1>
+                                <label for="company_id" class="oe_edit_only"/>
+                                <field name="company_id"/>
+                            </h1>
+                        </div>
+                        <group>
+                             <field name="export_method"/>
+                        </group>
+                        <group>
+                            <field name="auto_export_header"/>
+                            <p>Without function at the moment.</p>
+                        </group>
+                        <group  attrs="{'invisible': [('auto_export_header', '=', False)]}">
+                            <field name="advisor_number" attrs="{'required': [('auto_export_header', '=', True)]}"/>
+                            <field name="client_number" attrs="{'required': [('auto_export_header', '=', True)]}"/>
+                        </group>
+                        <group string="Journals for Scheduler">
+                            <field name="scheduler_journals" widget="many2many_tags"/>
+                            <field name="scheduler_limit"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_export_configuration_tree" model="ir.ui.view">
+            <field name="name">view.export.configuration.tree</field>
+            <field name="model">export.configuration</field>
+            <field name="arch" type="xml">
+                <tree string="Export Configuration">
+                    <field name="company_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_open_export_configuration_tree" model="ir.actions.act_window">
+            <field name="name">Configure Export Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">export.configuration</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_export_configuration_tree"/>
+        </record>
+
+        <menuitem id="menu_export_configuration" name="Main Settings"
+            parent="menu_finance_export_export_configuration"
+            action="action_open_export_configuration_tree" sequence="90"/>
+
+    </data>
+</odoo>

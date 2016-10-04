@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_export_logger_view" model="ir.ui.view">
+            <field name="name">view.export.logger.view</field>
+            <field name="model">export.logger</field>
+            <field name="arch" type="xml">
+                <form string="Export Logger" create="false" edit="false">
+                    <sheet>
+                        <div>
+                            <h1>
+                                <label for="name" class="oe_edit_only"/>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="moves"/>
+                            <field name="errors"/>
+                            <field name="logging"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_export_logger_tree" model="ir.ui.view">
+            <field name="name">view.export.logger.tree</field>
+            <field name="model">export.logger</field>
+            <field name="arch" type="xml">
+                <tree string="Export Files" create="false" edit="false">
+                    <field name="name"/>
+                    <field name="moves"/>
+                    <field name="errors"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_open_export_logger_tree" model="ir.actions.act_window">
+            <field name="name">Export Logger</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">export.logger</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_export_logger_tree"/>
+        </record>
+
+        <menuitem id="menu_export_logger" name="Export-Logging"
+            parent="menu_finance_export_moves"
+            action="action_open_export_logger_tree" sequence="25"/>
+
+    </data>
+</odoo>

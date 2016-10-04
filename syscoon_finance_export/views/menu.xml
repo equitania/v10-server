@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="menu_finance_export_export"
+            name="Move Export"
+            parent="account.menu_finance"
+            sequence="10"
+            groups="account.group_account_user"/>
+
+        <menuitem id="menu_finance_export_moves"
+            name="Moves"
+            parent="menu_finance_export_export"
+            sequence="10"
+            groups="account.group_account_user"/>
+
+        <menuitem
+            id="menu_finance_export_export_configuration"
+            name="Configuration"
+            parent="menu_finance_export_export"
+            sequence="10"
+            groups="account.group_account_manager"/>
+
+    </data>
+</odoo>

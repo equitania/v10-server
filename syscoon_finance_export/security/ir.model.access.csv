@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_move_export_auto_account_accountant,move.export.auto.account.accountant,syscoon_finance_export.model_export_auto_account,account.group_account_user,1,0,0,0
+access_move_export_key_accountant,move.export.key.accountant,syscoon_finance_export.model_export_key,account.group_account_user,1,0,0,0
+access_move_export_logger_accountant,move.export.logger.accountant,syscoon_finance_export.model_export_logger,account.group_account_user,1,0,0,0
+access_move_export_move_accountant,move.export.move.accountant,syscoon_finance_export.model_export_move,account.group_account_user,1,0,1,0
+access_move_export_move_create_accountant,move.export.move.create.accountant,syscoon_finance_export.model_export_move_create,account.group_account_user,1,1,1,1
+access_move_export_exports_accountant,move.export.export.accountant,syscoon_finance_export.model_export_exports,account.group_account_user,1,0,1,0
+access_move_export_move_export_manager,move.export.move.export.manager,syscoon_finance_export.model_export_move_export,account.group_account_manager,1,1,1,1
+access_move_export_auto_account_manager,move.export.auto.account.manager,syscoon_finance_export.model_export_auto_account,account.group_account_manager,1,1,1,1
+access_move_export_key_manager,move.export.key.manager,syscoon_finance_export.model_export_key,account.group_account_manager,1,1,1,1
+access_move_export_move_manager,move.export.move.manager,syscoon_finance_export.model_export_move,account.group_account_manager,1,1,1,1
+access_move_export_move_create_manager,move.export.move.create.manager,syscoon_finance_export.model_export_move_create,account.group_account_manager,1,1,1,1
+access_move_export_move_export_manager,move.export.move.export.manager,syscoon_finance_export.model_export_move_export,account.group_account_manager,1,1,1,1
+access_move_export_configuration_manager,move.export.configuration.manager,syscoon_finance_export.model_export_configuration,account.group_account_manager,1,1,1,1
+access_move_export_exports_manager,move.export.export.manager,syscoon_finance_export.model_export_exports,account.group_account_manager,1,1,1,1

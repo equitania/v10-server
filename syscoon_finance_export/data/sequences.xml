@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="st_move_seq" model="ir.sequence">
+            <field name="name">St.Export Move Sequence</field>
+            <field name="code">st.export.move.sequence</field>
+            <field name="prefix">%(year)s%(month)s</field>
+            <field eval="1" name="number_next"/>
+            <field eval="6" name="padding"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+        <record id="datev_export_seq" model="ir.sequence">
+            <field name="name">Export Move Sequence</field>
+            <field name="code">st.export.sequence</field>
+            <field name="prefix">DE</field>
+            <field eval="1" name="number_next"/>
+            <field eval="6" name="padding"/>
+            <field eval="1" name="number_increment"/>
+        </record>
+
+    </data>
+</odoo>

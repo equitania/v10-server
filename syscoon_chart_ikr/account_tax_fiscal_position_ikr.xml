@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="True">  
+
+        <record id="tax_eu_19_purchase_ust_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">19% Umsatzsteuer aus innergem. Erwerb - IKR</field>
+            <field name="description">19% USt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">-19</field>
+            <field name="refund_account_id" ref="chart_ikr_04804"/>
+            <field name="account_id" ref="chart_ikr_04804"/>
+            <field name="type_tax_use">none</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_15')])]"/>
+        </record>
+
+        <record id="tax_eu_19_purchase_vst_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">19% Vorsteuer aus innergem. Erwerb - IKR</field>
+            <field name="description">19% VSt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">19</field>
+            <field name="refund_account_id" ref="chart_ikr_02604"/>
+            <field name="account_id" ref="chart_ikr_02604"/>
+            <field name="type_tax_use">none</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_27')])]"/>
+        </record>
+
+        <record id="tax_eu_19_purchase_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Innergem. Erwerb 19%USt/19%VSt - IKR</field>
+            <field name="description">innergem. Erwerb 19%</field>
+            <field name="amount_type">group</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('tax_eu_19_purchase_ust_ikr'), ref('tax_eu_19_purchase_vst_ikr')])]"/>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_53')])]"/>
+        </record>
+        
+        <record id="tax_eu_7_purchase_ust_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">7% Umsatzsteuer aus innergem. Erwerb - IKR</field>
+            <field name="description">7% USt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">-7</field>
+            <field name="refund_account_id" ref="chart_ikr_04802"/>
+            <field name="account_id" ref="chart_ikr_04802"/>
+            <field name="type_tax_use">none</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_54')])]"/>
+        </record>
+
+        <record id="tax_eu_7_purchase_vst_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">7% Vorsteuer aus innergem. Erwerb - IKR</field>
+            <field name="description">7% VSt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">7</field>
+            <field name="refund_account_id" ref="chart_ikr_04802"/>
+            <field name="account_id" ref="chart_ikr_04802"/>
+            <field name="type_tax_use">none</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_27')])]"/>
+        </record>
+
+        <record id="tax_eu_7_purchase_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Innergem. Erwerb 7%USt/7%VSt - IKR</field>
+            <field name="description">innergem. Erwerb 7%</field>
+            <field name="amount_type">group</field>
+            <field name="amount">0</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('tax_eu_7_purchase_ust_ikr'), ref('tax_eu_7_purchase_vst_ikr')])]"/>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_53')])]"/>
+        </record>
+
+        <record id="tax_eu_sale_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Steuerfreie innergem. Lieferung (§4 Abs. 1b UStG) - IKR</field>
+            <field name="description">steuerfreie innergem. Lieferung</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">0</field>
+            <field name="refund_account_id" ref="chart_ikr_04800"/>
+            <field name="account_id" ref="chart_ikr_04800"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_36')])]"/>
+        </record>
+
+        <record id="tax_export_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Steuerfreie Ausfuhr (§4 Nr. 1a UStG) - IKR</field>
+            <field name="description">steuerfreie Ausfuhr</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">0</field>
+            <field name="refund_account_id" ref="chart_ikr_04800"/>
+            <field name="account_id" ref="chart_ikr_04800"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_37')])]"/>
+        </record>
+        
+        <record id="tax_import_19_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">19% Einfuhrumsatzsteuer - IKR</field>
+            <field name="description">19% EUSt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">19</field>
+            <field name="refund_account_id" ref="chart_ikr_02633"/>
+            <field name="account_id" ref="chart_ikr_02633"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_28'), ref('l10n_de.tag_de_67')])]"/>
+        </record>       
+
+        <record id="tax_import_7_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">7% Einfuhrumsatzsteuer - IKR</field>
+            <field name="description">7% EUSt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">7</field>
+            <field name="refund_account_id" ref="chart_ikr_02633"/>
+            <field name="account_id" ref="chart_ikr_02633"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_28'), ref('l10n_de.tag_de_68')])]"/>
+        </record>        
+
+        <record id="tax_not_taxable_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">nicht steuerbar - IKR</field>
+            <field name="description">nicht steuerbar</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">0</field>
+            <field name="refund_account_id" ref="chart_ikr_04800"/>
+            <field name="account_id" ref="chart_ikr_04800"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_59')])]"/>
+        </record>
+        
+        <record id="tax_ust_19_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">19% Umsatzsteuer - IKR</field>
+            <field name="description">19% USt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">19</field>
+            <field name="refund_account_id" ref="chart_ikr_04806"/>
+            <field name="account_id" ref="chart_ikr_04806"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_09'), ref('l10n_de.tag_de_44')])]"/>
+        </record>        
+
+        <record id="tax_ust_7_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">7% Umsatzsteuer - IKR</field>
+            <field name="description">7% USt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">7</field>
+            <field name="refund_account_id" ref="chart_ikr_04801"/>
+            <field name="account_id" ref="chart_ikr_04801"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_10'), ref('l10n_de.tag_de_45')])]"/>
+        </record>
+
+        <record id="tax_vst_19_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">19% Vorsteuer - IKR</field>
+            <field name="description">19% VSt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">19</field>
+            <field name="refund_account_id" ref="chart_ikr_02606"/>
+            <field name="account_id" ref="chart_ikr_02606"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_31'), ref('l10n_de.tag_de_70')])]"/>
+        </record>
+
+        <record id="tax_vst_7_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">7% Vorsteuer - IKR</field>
+            <field name="description">7% VSt</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">7</field>
+            <field name="refund_account_id" ref="chart_ikr_02601"/>
+            <field name="account_id" ref="chart_ikr_02601"/>
+            <field name="type_tax_use">purchase</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_31'), ref('l10n_de.tag_de_71')])]"/>
+        </record>
+
+        <record id="tax_ust_19_eu_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">19 % Umsatzsteuer EU Lieferung - IKR</field>
+            <field name="description">19% USt EU</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">19</field>
+            <field name="refund_account_id" ref="chart_ikr_04808"/>
+            <field name="account_id" ref="chart_ikr_04808"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_09'), ref('l10n_de.tag_de_44')])]"/>
+        </record>
+
+        <record id="tax_ust_7_eu_ikr" model="account.tax.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">7% Umsatzsteuer EU Lieferung - IKR</field>
+            <field name="description">7% USt EU</field>
+            <field name="amount_type">percent</field>
+            <field name="amount">7</field>
+            <field name="refund_account_id" ref="chart_ikr_04807"/>
+            <field name="account_id" ref="chart_ikr_04807"/>
+            <field name="type_tax_use">sale</field>
+            <field name="tag_ids" eval="[(6,0,[ref('l10n_de.tag_de_45'), ref('l10n_de.tag_de_10')])]"/>
+        </record>
+
+        <record model="account.fiscal.position.template" id="fiscal_position_eu_no_id_purchase_ikr">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Lieferant EU (ohne Ust-ID) - IKR</field>
+        </record>
+
+        <record model="account.fiscal.position.template" id="fiscal_position_non_eu_purchase_ikr">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Lieferant Ausland - IKR</field>
+        </record>
+
+        <record model="account.fiscal.position.template" id="fiscal_position_eu_vat_id_sale_ikr">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Kunde EU Unternehmen (mit USt-ID) - IKR</field>
+        </record>
+
+        <record model="account.fiscal.position.template" id="fiscal_position_non_eu_sale_ikr">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Kunde Ausland - IKR</field>
+        </record>
+
+        <record model="account.fiscal.position.template" id="fiscal_position_eu_vat_id_purchase_ikr">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Lieferant EU Unternehmen (mit USt-ID) - IKR</field>
+        </record>
+
+        <record model="account.fiscal.position.template" id="fiscal_position_eu_no_id_sale_ikr">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+            <field name="name">Kunde EU (ohne USt-ID) - IKR</field>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_vat_id_sale_19_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_sale_ikr"/>
+            <field name="tax_dest_id" ref="tax_eu_sale_ikr"/>
+            <field name="tax_src_id" ref="tax_ust_19_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_vat_id_sale_7_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_sale_ikr"/>
+            <field name="tax_dest_id" ref="tax_eu_sale_ikr"/>
+            <field name="tax_src_id" ref="tax_ust_7_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_vat_id_purchase_19_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_purchase_ikr"/>
+            <field name="tax_dest_id" ref="tax_eu_19_purchase_ikr"/>
+            <field name="tax_src_id" ref="tax_vst_19_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_vat_id_purchase_7_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_purchase_ikr"/>
+            <field name="tax_dest_id" ref="tax_eu_7_purchase_ikr"/>
+            <field name="tax_src_id" ref="tax_vst_7_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_no_id_purchase_19_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_purchase_ikr"/>
+            <field name="tax_dest_id" ref="tax_import_19_ikr"/>
+            <field name="tax_src_id" ref="tax_vst_19_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_no_id_purchase_7_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_purchase_ikr"/>
+            <field name="tax_dest_id" ref="tax_import_7_ikr"/>
+            <field name="tax_src_id" ref="tax_vst_7_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_no_id_sale_19_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_sale_ikr"/>
+            <field name="tax_dest_id" ref="tax_ust_19_eu_ikr"/>
+            <field name="tax_src_id" ref="tax_ust_19_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_eu_no_id_sale_7_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_sale_ikr"/>
+            <field name="tax_dest_id" ref="tax_ust_7_eu_ikr"/>
+            <field name="tax_src_id" ref="tax_ust_7_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_non_eu_sale_19_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_non_eu_sale_ikr"/>
+            <field name="tax_dest_id" ref="tax_export_ikr"/>
+            <field name="tax_src_id" ref="tax_ust_19_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_non_eu_sale_7_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_non_eu_sale_ikr"/>
+            <field name="tax_dest_id" ref="tax_export_ikr"/>
+            <field name="tax_src_id" ref="tax_ust_7_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_non_eu_purchase_19_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_non_eu_purchase_ikr"/>
+            <field name="tax_dest_id" ref="tax_import_19_ikr"/>
+            <field name="tax_src_id" ref="tax_vst_19_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_tax_non_eu_purchase_7_ikr" model="account.fiscal.position.tax.template">
+            <field name="position_id" ref="fiscal_position_non_eu_purchase_ikr"/>
+            <field name="tax_dest_id" ref="tax_import_7_ikr"/>
+            <field name="tax_src_id" ref="tax_vst_7_ikr"/>
+        </record>
+
+        <record id="account_fiscal_position_account_eu_vat_id_sale_19_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_sale_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_05000" />
+            <field name="account_dest_id" ref="chart_ikr_05040" />
+        </record>
+
+        <record id="account_fiscal_position_account_eu_vat_id_sale_7_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_sale_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_05020" />
+            <field name="account_dest_id" ref="chart_ikr_05040" />
+        </record>
+
+        <record id="account_fiscal_position_account_non_eu_sale_19_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_non_eu_sale_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_05000" />
+            <field name="account_dest_id" ref="chart_ikr_05042" />
+        </record>
+
+        <record id="account_fiscal_position_account_non_eu_sale_7_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_non_eu_sale_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_05020" />
+            <field name="account_dest_id" ref="chart_ikr_05042" />
+        </record>
+
+        <record id="account_fiscal_position_account_non_eu_purchase_19_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_non_eu_purchase_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_06000" />
+            <field name="account_dest_id" ref="chart_ikr_06090" />
+        </record>
+
+        <record id="account_fiscal_position_account_non_eu_purchase_7_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_non_eu_purchase_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_06005" />
+            <field name="account_dest_id" ref="chart_ikr_06091" />
+        </record>
+
+        <record id="account_fiscal_position_account_eu_no_id_sale_19_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_sale_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_05000" />
+            <field name="account_dest_id" ref="chart_ikr_05005" />
+        </record>
+
+        <record id="account_fiscal_position_account_no_id_sale_7_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_sale_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_05020" />
+            <field name="account_dest_id" ref="chart_ikr_05025" />
+        </record>
+
+        <record id="account_fiscal_position_account_eu_vat_id_purchase_19_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_purchase_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_06000" />
+            <field name="account_dest_id" ref="chart_ikr_06095" />
+        </record>
+
+        <record id="account_fiscal_position_account_eu_vat_id_purchase_7_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_vat_id_purchase_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_06005" />
+            <field name="account_dest_id" ref="chart_ikr_06095" />
+        </record>
+
+        <record id="account_fiscal_position_account_eu_no_id_purchase_19_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_purchase_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_06000" />
+            <field name="account_dest_id" ref="chart_ikr_06090" />
+        </record>
+
+        <record id="account_fiscal_position_account_no_id_purchase_7_ikr" model="account.fiscal.position.account.template">
+            <field name="position_id" ref="fiscal_position_eu_no_id_purchase_ikr"/>
+            <field name="account_src_id" ref="chart_ikr_06005" />
+            <field name="account_dest_id" ref="chart_ikr_06091" />
+        </record>
+
+    </data>
+</odoo>

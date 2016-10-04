@@ -1,0 +1,697 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* syscoon_finance_export
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-05 21:53+0000\n"
+"PO-Revision-Date: 2016-09-05 21:53+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/account_move.py:223
+#, python-format
+msgid "%s has amount 0,00 and can not exported"
+msgstr "%s hat den Betrag 0,00 und kann nicht exportiert werden"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/account_move.py:179
+#, python-format
+msgid "%s has no / to many different accounts in debit / credit and can not exported"
+msgstr "%s hat keine / zu viele Soll- / Haben-Konten und kann icht exportiert werden"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_account_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_account
+msgid "Account"
+msgstr "Konto"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_account_move
+msgid "Account Entry"
+msgstr "Buchungssatz"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_account_move
+msgid "Account Move"
+msgstr "Buchung"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_active
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_active
+msgid "Active"
+msgstr "Aktiv"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_advisor_number
+msgid "Advisor Number"
+msgstr "Beraternummer"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,help:syscoon_finance_export.action_export_move_unlink
+msgid "All selected entries will be checked for deletion. If there is a move which is exported, it can't deleted. Please delete the export first. If there is a export move who has a link to an account move, which is not selected, it will also deleted."
+msgstr "Alle selektierten Einträge werden für das Löschen geprüft. Wenn eine Buchung bereits exportiert ist, kann sie nicht gelöscht werden. Bitte löschen Sie in diesem Fall zuerst den Export. Wenn eine exportierte Buchung zu einer Buchung in Odoo verklinkt ist, die nicht selektiert ist, wird diese ebenfalls gelöscht."
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.unlink_export_move_view
+msgid "All selected entries will be deleted if it is possible."
+msgstr "Alle gewählten Einträge werden gelöscht, wenn dies möglich ist."
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_file_view
+msgid "All selected entries will be used to create the Export File."
+msgstr "Alle gewählten Einträge werden in den Export erzeugt."
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_move_view
+msgid "All selected journal entries will be used to create the export Moves."
+msgstr "Alle gewählten Journaleiträge werden verwendet um die Exportbuchungen zu erzeugen."
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_amount
+msgid "Amount"
+msgstr "Betrag"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_account_tree
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_account_view
+msgid "Auto Account Configuration"
+msgstr "Automatikkonten Konfiguration"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_export_account_configuration
+msgid "Auto Accounts"
+msgstr "Automatikkonten"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_vat_code
+msgid "Auto-Tax"
+msgstr "Automatische Steuer"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_auto_export_header
+msgid "Automated Export Header"
+msgstr "Automatischer Export-Kopf"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_base_cur_amount
+msgid "Base Currency Amount"
+msgstr "Basiswährungsbetrag"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_base_cur_code
+msgid "Base Currency Code"
+msgstr "Basiswährungskennung"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_bkey
+msgid "Booking Key"
+msgstr "Buchungsschlüssel"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_key_tree
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_key_view
+msgid "Booking Key Configuration"
+msgstr "Buchungsschlüssel Konfiguration"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_export_key_configuration
+msgid "Booking Keys"
+msgstr "Buchungsschlüssel"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_bookingtext
+msgid "Booking Text"
+msgstr "Buchungstext"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_file_view
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_move_view
+#: model:ir.ui.view,arch_db:syscoon_finance_export.unlink_export_move_view
+msgid "Cancel"
+msgstr "Verwerfen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_client_number
+msgid "Client Number"
+msgstr "Mandantennummer"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_company_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_company_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_company_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_company_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_company_id
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_name
+msgid "Company Name"
+msgstr "Unternehmensname"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_finance_export_export_configuration
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_configuration
+msgid "Configuration of the Export"
+msgstr "Konfiguration des Exports"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_open_export_account_configuration_tree
+msgid "Configure Auto Accounts"
+msgstr "Konfiguration Automatikkonten"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_open_export_key_configuration_tree
+msgid "Configure Booking Keys"
+msgstr "Konfiguration Buchungsschlüssel"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_open_export_configuration_tree
+msgid "Configure Export Settings"
+msgstr "Konfiguration Exporteinstellungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_cost1
+msgid "Cost 1"
+msgstr "Kost 1"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_cost2
+msgid "Cost 2"
+msgstr "Kost 2"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_cost_quant
+msgid "Cost Quantity"
+msgstr "Kost Menge"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_export_file_create
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_file_view
+msgid "Create Export File"
+msgstr "Export-Datei erstellen"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_export_move_create
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_move_view
+msgid "Create Export Moves"
+msgstr "Export-Buchungen erstellen"
+
+#. module: syscoon_finance_export
+#: selection:export.exports,state:0
+#: selection:export.move,state:0
+msgid "Created"
+msgstr "Erstellt"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_moves
+msgid "Created Moves"
+msgstr "Erzeugte Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink_create_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler_create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink_create_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler_create_date
+msgid "Created on"
+msgstr "Angelegt am"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_move_create
+msgid "Creates Datev Moves"
+msgstr "Erstellt Datev-Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_file_view
+msgid "Creates Export File"
+msgstr "Erstellt Export-Datei"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.create_export_move_view
+msgid "Creates export Moves"
+msgstr "Erstellt Export-Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_currency
+msgid "Currency"
+msgstr "Währung"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_exchange_rate
+msgid "Currency Exchange Rate"
+msgstr "Wechselkurs"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_booking_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_date
+msgid "Date"
+msgstr "Datum"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_dc_sign
+msgid "Debit / Credit Sign"
+msgstr "Soll / Haben Kennzeichen"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_export_move_unlink
+msgid "Delete Export Moves"
+msgstr "Export-Buchungen löschen"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.unlink_export_move_view
+msgid "Delete export Moves"
+msgstr "Export-Buchungen löschen"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.unlink_export_move_view
+msgid "Deletes Export Moves"
+msgstr "Löscht Export-Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_discount
+msgid "Discount"
+msgstr "Rabatt"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink_display_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler_display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: syscoon_finance_export
+#: selection:export.exports,state:0
+msgid "Draft"
+msgstr "Entwurf"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_eu_tax
+msgid "EU Tax Rate"
+msgstr "EU Steuersatz"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_logger
+msgid "Error Logging for Move Creation"
+msgstr "Fehlermeldungen für Buchungserstellung"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_errors
+msgid "Errors"
+msgstr "Fehler"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_export
+msgid "Export"
+msgstr "Export"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_configuration_tree
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_configuration_view
+msgid "Export Configuration"
+msgstr "Export Konfiguration"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_date_range
+msgid "Export Date Range"
+msgstr "Export Datumsbereich"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_file
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_exports_view
+msgid "Export File"
+msgstr "Export-Datei"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_file_name
+msgid "Export Filename"
+msgstr "Export Dateiname"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_open_export_exports_tree
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_export_exports
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_exports_tree
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_logger_tree
+msgid "Export Files"
+msgstr "Export-Dateien"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_export_key
+msgid "Export Key"
+msgstr "Export-Schlüssel"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_open_export_logger_tree
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_logger_view
+msgid "Export Logger"
+msgstr "Export Fehlermeldungen"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_move_view
+msgid "Export Move"
+msgstr "Export-Buchung"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_move_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_export_move
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_move_tree
+msgid "Export Moves"
+msgstr "Export-Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_export_method
+msgid "Export method"
+msgstr "Export Methode"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_export_logger
+msgid "Export-Logging"
+msgstr "Export-Fehlermeldungen"
+
+#. module: syscoon_finance_export
+#: selection:export.move,state:0
+msgid "Exported"
+msgstr "Exportiert"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/move.py:146
+#, python-format
+msgid "Forbbiden to duplicate!"
+msgstr "Duplizieren nicht möglich"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/account_move.py:244
+#, python-format
+msgid "Forbidden to Cancel!"
+msgstr "Löschen nicht möglich!"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink_id
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler_id
+msgid "ID"
+msgstr "ID"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_move_view
+msgid "Info Data"
+msgstr "Info-Daten"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/move.py:147
+#, python-format
+msgid "Is not possible to duplicate a Datev Move!"
+msgstr "Es ist nicht möglich eine Datev-Buchung zu duplizieren!"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_configuration_view
+msgid "Journals for Scheduler"
+msgstr "Journale für Automatik"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink___last_update
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler___last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_write_uid
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler_write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert durch"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_create_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_export_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_unlink_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_write_date
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_syscoon_export_move_scheduler_write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_scheduler_limit
+msgid "Limit Moves"
+msgstr "Limit Moves"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_logging
+msgid "Logging"
+msgstr "Logging"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_export_configuration
+msgid "Main Settings"
+msgstr "Haupteinstellungen"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_move_view
+msgid "Move Data"
+msgstr "Buchungsdaten"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_move_date
+msgid "Move Date"
+msgstr "Buchungsdatum"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_finance_export_export
+msgid "Move Export"
+msgstr "Buchungs-Export"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.menu,name:syscoon_finance_export.menu_finance_export_moves
+msgid "Moves"
+msgstr "Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_auto_account_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_logger_name
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_name
+msgid "Name"
+msgstr "Bezeichnung"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/account_move.py:232
+#, python-format
+msgid "No Errors, %d moves correctly created"
+msgstr "No Errors, %d moves correctly created"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_note
+msgid "Note"
+msgstr "Bemerkung"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_account_offset
+msgid "Offset Account"
+msgstr "Gegenkonto"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/wizard/move_unlink.py:17
+#, python-format
+msgid "Pleas delet the Export first, before you can delete a move."
+msgstr "Bitte löschen Sie den Expor befor Sie die Buchung löschen."
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/account_move.py:246
+#, python-format
+msgid "Please delete the Datev-Export first"
+msgstr "Bitte löschen Sie zuerst den Datev-Export"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_syscoon_export_move_scheduler
+msgid "Scheduler for Creates Datev Moves"
+msgstr "Scheduler for Creates Datev Moves"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_configuration_scheduler_journals
+msgid "Scheduler journals"
+msgstr "Automatik-Journale"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_slip1
+msgid "Slip Field 1"
+msgstr "Belegfeld1"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_slip2
+msgid "Slip Field 2"
+msgstr "Belegfeld2"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_exports_state
+msgid "State"
+msgstr "Status"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_state
+msgid "Status"
+msgstr "Status"
+
+#. module: syscoon_finance_export
+#: sql_constraint:export.configuration:0
+msgid "The Company must be unique in Settings!"
+msgstr "Für die Firma kan nur einmalig angelegt werden!"
+
+#. module: syscoon_finance_export
+#: sql_constraint:export.auto.account:0
+msgid "The VAT-Code must be unique per Company"
+msgstr "Der Steuerschlüssel muss einlalig je Firma sein"
+
+#. module: syscoon_finance_export
+#: sql_constraint:export.key:0
+msgid "The VAT-Code must be unique per Company!"
+msgstr "Der Steuerschlüssel muss einmalig je Firma sein!"
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/wizard/move_create.py:17
+#, python-format
+msgid "There is no posted move item to create a Datev-Move."
+msgstr "Es gibt keine Buchung für die eine Datev-Buchung generiert werden kann."
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/wizard/move_export.py:17
+#, python-format
+msgid "There is no posted move item to create a Export-File."
+msgstr "Es gibt keine Buchung um eine Export-Datei zu erstellen."
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,help:syscoon_finance_export.action_export_file_create
+msgid "This wizard will create a Export file from all selected Moves."
+msgstr "Dieser Assistent erstellt eine Export-Datei von allen ausgewählten Buchungen."
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,help:syscoon_finance_export.action_export_move_create
+msgid "This wizard will create all export moves selected."
+msgstr "Dieser Assistent erstellt Export-Buchungen aus allen ausgewählten Buchungen."
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_move_unlink
+msgid "Unlinks ExportMoves"
+msgstr "Löscht Export-Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_key_vat_code
+msgid "VAT Code"
+msgstr "USt-ID"
+
+#. module: syscoon_finance_export
+#: model:ir.model.fields,field_description:syscoon_finance_export.field_export_move_vat_id
+msgid "VAT-ID"
+msgstr "USt-ID"
+
+#. module: syscoon_finance_export
+#: model:ir.ui.view,arch_db:syscoon_finance_export.view_export_configuration_view
+msgid "Without function at the moment."
+msgstr "Zur Zeit ohne Funktion."
+
+#. module: syscoon_finance_export
+#: code:addons/syscoon_finance_export/models/account_move.py:245
+#, python-format
+msgid "You can not delete a Move which is exported to Datev!"
+msgstr "Sie können keine Buchung löschen, welche bereits nach Datev exportiert wurde!"
+
+#. module: syscoon_finance_export
+#: model:ir.actions.act_window,name:syscoon_finance_export.action_open_export_move_tree
+msgid "export Moves"
+msgstr "Export-Buchungen"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_auto_account
+msgid "export.auto.account"
+msgstr "export.auto.account"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_exports
+msgid "export.exports"
+msgstr "export.exports"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_key
+msgid "export.key"
+msgstr "export.key"
+
+#. module: syscoon_finance_export
+#: model:ir.model,name:syscoon_finance_export.model_export_move
+msgid "export.move"
+msgstr "export.move"
+
+#. module: syscoon_finance_export
+#: selection:export.configuration,export_method:0
+msgid "gross"
+msgstr "brutto"
+
+#. module: syscoon_finance_export
+#: selection:export.configuration,export_method:0
+msgid "net"
+msgstr "netto"
+

@@ -1,0 +1,2372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="chart_ikr_02695" model="account.account.template">
+            <field name="code">2695</field>
+            <field name="name">Geldtransit</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+        </record>
+
+        <record id="l10n_chart_de_ikr" model="account.chart.template">
+            <field name="name">Deutscher Kontenplan IKR</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="transfer_account_id" ref="chart_ikr_02695"/>
+        </record>
+
+        <record id="chart_ikr_02695" model="account.account.template">
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>    
+    
+        <record id="chart_ikr_00000" model="account.account.template">
+            <field name="code">0000</field>
+            <field name="name">Ausstehende Einlagen auf das gezeichnete Kapital- nichteingefordert (Aktivausweis)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+    
+        <record id="chart_ikr_00200" model="account.account.template">
+            <field name="code">0200</field>
+            <field name="name">Konzessionen, Schutzrechte, Lizenzen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00300" model="account.account.template">
+            <field name="code">0300</field>
+            <field name="name">Geschäfts- oder Firmenwert</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00500" model="account.account.template">
+            <field name="code">0500</field>
+            <field name="name">Unbebaute Grundstücke</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00510" model="account.account.template">
+            <field name="code">0510</field>
+            <field name="name">Bebaute Grundstücke</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00530" model="account.account.template">
+            <field name="code">0530</field>
+            <field name="name">Betriebsgebäude</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00540" model="account.account.template">
+            <field name="code">0540</field>
+            <field name="name">Vewaltungsgebäude</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00550" model="account.account.template">
+            <field name="code">0550</field>
+            <field name="name">Andere Bauten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00560" model="account.account.template">
+            <field name="code">0560</field>
+            <field name="name">Grundstückseinrichtungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00570" model="account.account.template">
+            <field name="code">0570</field>
+            <field name="name">Gebäudeeinrichtungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00590" model="account.account.template">
+            <field name="code">0590</field>
+            <field name="name">Wohngebäude</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00700" model="account.account.template">
+            <field name="code">0700</field>
+            <field name="name">Anlagen und Maschinen d. Energievers.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00710" model="account.account.template">
+            <field name="code">0710</field>
+            <field name="name">Anlagen der Materiallagerung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00720" model="account.account.template">
+            <field name="code">0720</field>
+            <field name="name">Anlagen und Maschinen d. Materialverarb.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00730" model="account.account.template">
+            <field name="code">0730</field>
+            <field name="name">Anlagen für chemische Prozesse</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00740" model="account.account.template">
+            <field name="code">0740</field>
+            <field name="name">Anlagen für Arbeitssicherh. u. Umweltsch.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00750" model="account.account.template">
+            <field name="code">0750</field>
+            <field name="name">Transportanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00760" model="account.account.template">
+            <field name="code">0760</field>
+            <field name="name">Verpackungsanlagen u. -maschinen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00770" model="account.account.template">
+            <field name="code">0770</field>
+            <field name="name">Sonstige Anlagen u. Maschinen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00780" model="account.account.template">
+            <field name="code">0780</field>
+            <field name="name">Reservemaschinenn u. -anlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00790" model="account.account.template">
+            <field name="code">0790</field>
+            <field name="name">Geringwertige Anlagen u. Maschinen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00791" model="account.account.template">
+            <field name="code">0791</field>
+            <field name="name">Geringwertige Anl. u. Masch. Sammelposten Jahr 1</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00792" model="account.account.template">
+            <field name="code">0792</field>
+            <field name="name">Geringwertige Anl. u. Masch. Sammelposten Jahr 2</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00793" model="account.account.template">
+            <field name="code">0793</field>
+            <field name="name">Geringwertige Anl. u. Masch. Sammelposten Jahr 3</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00794" model="account.account.template">
+            <field name="code">0794</field>
+            <field name="name">Geringwertige Anl. u. Masch. Sammelposten Jahr 4</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00795" model="account.account.template">
+            <field name="code">0795</field>
+            <field name="name">Geringwertige Anl. u. Masch. Sammelposten Jahr 5</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00800" model="account.account.template">
+            <field name="code">0800</field>
+            <field name="name">Andere Anlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00810" model="account.account.template">
+            <field name="code">0810</field>
+            <field name="name">Werkstätteneinrichtung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00820" model="account.account.template">
+            <field name="code">0820</field>
+            <field name="name">Werkzeuge und Werksgeräte</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00830" model="account.account.template">
+            <field name="code">0830</field>
+            <field name="name">Lager- u. Transporteinrichtung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00840" model="account.account.template">
+            <field name="code">0840</field>
+            <field name="name">Fuhrpark</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00850" model="account.account.template">
+            <field name="code">0850</field>
+            <field name="name">Sonstige Betriebsausstattung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00860" model="account.account.template">
+            <field name="code">0860</field>
+            <field name="name">Büromaschinen und Kommunikationsanl.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00870" model="account.account.template">
+            <field name="code">0870</field>
+            <field name="name">Bpüromöbel u. sonstige Geschäftsausst.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00880" model="account.account.template">
+            <field name="code">0880</field>
+            <field name="name">Reserveteile Betriebs- u. Geschäftsausst.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00890" model="account.account.template">
+            <field name="code">0890</field>
+            <field name="name">GWG der Betriebs- u. Geschäftsausstattung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00891" model="account.account.template">
+            <field name="code">0891</field>
+            <field name="name">Geringwertige Betr. u. Gscha. Sammelposten Jahr 1</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00892" model="account.account.template">
+            <field name="code">0892</field>
+            <field name="name">Geringwertige Betr. u. Gscha. Sammelposten Jahr 2</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00893" model="account.account.template">
+            <field name="code">0893</field>
+            <field name="name">Geringwertige Betr. u. Gscha. Sammelposten Jahr 3</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00894" model="account.account.template">
+            <field name="code">0894</field>
+            <field name="name">Geringwertige Betr. u. Gscha. Sammelposten Jahr 4</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00895" model="account.account.template">
+            <field name="code">0895</field>
+            <field name="name">Geringwertige Betr. u. Gscha. Sammelposten Jahr 5</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00900" model="account.account.template">
+            <field name="code">0900</field>
+            <field name="name">Geleistete Anz. auf Sachanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_00910" model="account.account.template">
+            <field name="code">0910</field>
+            <field name="name">Anlagen im Bau</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_01300" model="account.account.template">
+            <field name="code">1300</field>
+            <field name="name">Beiteiligungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_01500" model="account.account.template">
+            <field name="code">1500</field>
+            <field name="name">Wertpapiere des Anlagevermögens</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_01600" model="account.account.template">
+            <field name="code">1600</field>
+            <field name="name">Sonstige Finanzanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02000" model="account.account.template">
+            <field name="code">2000</field>
+            <field name="name">Rohstoffe / Fertigungsmaterial (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02001" model="account.account.template">
+            <field name="code">2001</field>
+            <field name="name">Rohstoffe / Fertigungsmateial (Einkauf)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02002" model="account.account.template">
+            <field name="code">2002</field>
+            <field name="name">Bezugskosten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02010" model="account.account.template">
+            <field name="code">2010</field>
+            <field name="name">Vorprodukte / Fremdbauteile</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02010" model="account.account.template">
+            <field name="code">2010</field>
+            <field name="name">Vorprodukte / Fremdbauteile</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02011" model="account.account.template">
+            <field name="code">2011</field>
+            <field name="name">Vorprodukte / Fremdbauteile (Einkauf)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02012" model="account.account.template">
+            <field name="code">2012</field>
+            <field name="name">Nächlässe Vorprodukte / Fremdbauteile</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02013" model="account.account.template">
+            <field name="code">2013</field>
+            <field name="name">Bezugskosten Vorprodukte / Fremdbauteile</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02020" model="account.account.template">
+            <field name="code">2020</field>
+            <field name="name">Hilfsstoffe (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02021" model="account.account.template">
+            <field name="code">2021</field>
+            <field name="name">Hilfsstoffe (Einkauf)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02022" model="account.account.template">
+            <field name="code">2022</field>
+            <field name="name">Nächlässe Hilfsstoffe</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02023" model="account.account.template">
+            <field name="code">2023</field>
+            <field name="name">Bezugskosten Vorprodukte / Fremdbauteile</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02030" model="account.account.template">
+            <field name="code">2030</field>
+            <field name="name">Betriebsstoffe (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02031" model="account.account.template">
+            <field name="code">2031</field>
+            <field name="name">Betriebsstoffe (Einkauf)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02032" model="account.account.template">
+            <field name="code">2032</field>
+            <field name="name">Nächlässe Betriebsstoffe</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02033" model="account.account.template">
+            <field name="code">2033</field>
+            <field name="name">Bezugskosten Betriebsstoffe</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02070" model="account.account.template">
+            <field name="code">2070</field>
+            <field name="name">Sonstiges Material (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02071" model="account.account.template">
+            <field name="code">2071</field>
+            <field name="name">Sonstiges Material (Einkauf)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02072" model="account.account.template">
+            <field name="code">2072</field>
+            <field name="name">Nächlässe sonstiges Material</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02073" model="account.account.template">
+            <field name="code">2073</field>
+            <field name="name">Bezugskosten sonstiges Material</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02100" model="account.account.template">
+            <field name="code">2100</field>
+            <field name="name">Unfertige Erzeugnisse (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_02190" model="account.account.template">
+            <field name="code">2190</field>
+            <field name="name">Unfertige Leistungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02200" model="account.account.template">
+            <field name="code">2200</field>
+            <field name="name">Fertige Erzeugnisse (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02280" model="account.account.template">
+            <field name="code">2280</field>
+            <field name="name">Handelswaren (Bestand)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02300" model="account.account.template">
+            <field name="code">2300</field>
+            <field name="name">Geleistete Anzahlungen a. Vorräte</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02400" model="account.account.template">
+            <field name="code">2400</field>
+            <field name="name">Forderung a. Lieferung u. Leistung</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02450" model="account.account.template">
+            <field name="code">2450</field>
+            <field name="name">Wechsel a. Lieferung u. Leistung</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02470" model="account.account.template">
+            <field name="code">2470</field>
+            <field name="name">Zweifelhafte Forderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02480" model="account.account.template">
+            <field name="code">2480</field>
+            <field name="name">Protestwechsel</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02600" model="account.account.template">
+            <field name="code">2600</field>
+            <field name="name">Abziehbare Vorsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02601" model="account.account.template">
+            <field name="code">2601</field>
+            <field name="name">Abziehbare Vorsteuer 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02602" model="account.account.template">
+            <field name="code">2602</field>
+            <field name="name">Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02603" model="account.account.template">
+            <field name="code">2603</field>
+            <field name="name">Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb 16%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02604" model="account.account.template">
+            <field name="code">2604</field>
+            <field name="name">Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02605" model="account.account.template">
+            <field name="code">2605</field>
+            <field name="name">Abziehbare Vorsteuer 16%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_02606" model="account.account.template">
+            <field name="code">2606</field>
+            <field name="name">Abziehbare Vorsteuer 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02607" model="account.account.template">
+            <field name="code">2607</field>
+            <field name="name">Abziehbare Vorsteuer nach § 13b UStG 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02608" model="account.account.template">
+            <field name="code">2608</field>
+            <field name="name">Abziehbare Vorsteuer nach § 13b UStG</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02609" model="account.account.template">
+            <field name="code">2609</field>
+            <field name="name">Abziehbare Vorsteuer nach § 13b UStG 16%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02610" model="account.account.template">
+            <field name="code">2610</field>
+            <field name="name">Aufzuteilende Vorsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02610" model="account.account.template">
+            <field name="code">2610</field>
+            <field name="name">Aufzuteilende Vorsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02630" model="account.account.template">
+            <field name="code">2630</field>
+            <field name="name">Sonst. Forderungen an Finanzbehörden</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02633" model="account.account.template">
+            <field name="code">2633</field>
+            <field name="name">Bezahlte Einfuhrumsatzsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02650" model="account.account.template">
+            <field name="code">2650</field>
+            <field name="name">Forderungen an Mitarbeiter</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02690" model="account.account.template">
+            <field name="code">2690</field>
+            <field name="name">Übrige Forderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02700" model="account.account.template">
+            <field name="code">2700</field>
+            <field name="name">Wertpapiere d. Umlaufvermögens</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02800" model="account.account.template">
+            <field name="code">2800</field>
+            <field name="name">Bank</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02850" model="account.account.template">
+            <field name="code">2850</field>
+            <field name="name">Postgiro</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02860" model="account.account.template">
+            <field name="code">2860</field>
+            <field name="name">Scheck</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02880" model="account.account.template">
+            <field name="code">2880</field>
+            <field name="name">Kasse</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02890" model="account.account.template">
+            <field name="code">2890</field>
+            <field name="name">Nebenkasse</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02895" model="account.account.template">
+            <field name="code">2895</field>
+            <field name="name">Verrechnungskonto Lohn und Gehalt</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_02900" model="account.account.template">
+            <field name="code">2900</field>
+            <field name="name">Aktive Rechnungsabgrenzung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03000" model="account.account.template">
+            <field name="code">3000</field>
+            <field name="name">Eigenkapital Einzelkaufleute</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03001" model="account.account.template">
+            <field name="code">3001</field>
+            <field name="name">Privatkonto</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03010" model="account.account.template">
+            <field name="code">3010</field>
+            <field name="name">Kapital Gesellschafter A</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03011" model="account.account.template">
+            <field name="code">3011</field>
+            <field name="name">Privatkonto Gesellschafter A</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03020" model="account.account.template">
+            <field name="code">3020</field>
+            <field name="name">Kapital Gesellschafter B</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03021" model="account.account.template">
+            <field name="code">3021</field>
+            <field name="name">Privatkonto Gesellschafter B</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03070" model="account.account.template">
+            <field name="code">3070</field>
+            <field name="name">Kommanditkapital Gesellschafter C</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03080" model="account.account.template">
+            <field name="code">3080</field>
+            <field name="name">Kommanditkapital Gesellschafter D</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03090" model="account.account.template">
+            <field name="code">3090</field>
+            <field name="name">Gezeichnetes Kapital (Grund- / Stammkapital)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03100" model="account.account.template">
+            <field name="code">3100</field>
+            <field name="name">Kapitalrücklage</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03210" model="account.account.template">
+            <field name="code">3210</field>
+            <field name="name">Gesetzliche Rücklage</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03230" model="account.account.template">
+            <field name="code">3230</field>
+            <field name="name">Satzungmäßige Rücklagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03240" model="account.account.template">
+            <field name="code">3240</field>
+            <field name="name">Andere Gewinnrücklagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03310" model="account.account.template">
+            <field name="code">3310</field>
+            <field name="name">Jahresergebnis des Vorjahres</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03320" model="account.account.template">
+            <field name="code">3320</field>
+            <field name="name">Ergebnisvortrag aus früheren Perioden</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03340" model="account.account.template">
+            <field name="code">3340</field>
+            <field name="name">Veränd. d. Gewinnrückl. v. Bilanzergebn.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03350" model="account.account.template">
+            <field name="code">3350</field>
+            <field name="name">Bilanzgewinn / Bilanzverlust</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03360" model="account.account.template">
+            <field name="code">3360</field>
+            <field name="name">Ergebnisausschüttung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03390" model="account.account.template">
+            <field name="code">3390</field>
+            <field name="name">Ergebnisvortrag auf neue Rechnung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03400" model="account.account.template">
+            <field name="code">3400</field>
+            <field name="name">Jahresüberschuss / Jahresfehlbetrag</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03500" model="account.account.template">
+            <field name="code">3500</field>
+            <field name="name">Sonderposten mit Rücklagenanteil</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_equity"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03610" model="account.account.template">
+            <field name="code">3610</field>
+            <field name="name">Wertberichtigung zu Sachanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03650" model="account.account.template">
+            <field name="code">3650</field>
+            <field name="name">Wertberichtigung zu Finanzanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03670" model="account.account.template">
+            <field name="code">3670</field>
+            <field name="name">Einzelwertberichtigung zu Forderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03680" model="account.account.template">
+            <field name="code">3680</field>
+            <field name="name">Pauschalwertberichtigung zu Forderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03700" model="account.account.template">
+            <field name="code">3700</field>
+            <field name="name">Rückstellungen f. Pensionen u. ä. Verpfl.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03800" model="account.account.template">
+            <field name="code">3800</field>
+            <field name="name">Steuerrückstellungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03910" model="account.account.template">
+            <field name="code">3910</field>
+            <field name="name">Sonst. Rückstellungen f. Gewährleistung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03930" model="account.account.template">
+            <field name="code">3930</field>
+            <field name="name">Sonst. Rückstellungen f. ungew. Verbindlichk.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03970" model="account.account.template">
+            <field name="code">3970</field>
+            <field name="name">Sonst. Rückstellungen f. drohende Verluste a. s. G.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_03990" model="account.account.template">
+            <field name="code">3990</field>
+            <field name="name">Sonstige Rückstellungen f. Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04100" model="account.account.template">
+            <field name="code">4100</field>
+            <field name="name">Anleihen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04200" model="account.account.template">
+            <field name="code">4200</field>
+            <field name="name">Kurzfristige Verbindlichkeiten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04250" model="account.account.template">
+            <field name="code">4250</field>
+            <field name="name">Langfristige Verbindlichkeiten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04300" model="account.account.template">
+            <field name="code">4300</field>
+            <field name="name">Erhaltene Anzahlungen aus Bestellungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04400" model="account.account.template">
+            <field name="code">4400</field>
+            <field name="name">Verbindlichkeiten a. Lieferung u. Leistung</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04500" model="account.account.template">
+            <field name="code">4500</field>
+            <field name="name">Schuldwechsel</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04800" model="account.account.template">
+            <field name="code">4800</field>
+            <field name="name">Umsatzsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04801" model="account.account.template">
+            <field name="code">4801</field>
+            <field name="name">Umsatzsteuer 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04802" model="account.account.template">
+            <field name="code">4802</field>
+            <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb </field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04803" model="account.account.template">
+            <field name="code">4803</field>
+            <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb 16%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04804" model="account.account.template">
+            <field name="code">4804</field>
+            <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04805" model="account.account.template">
+            <field name="code">4805</field>
+            <field name="name">Umsatzsteuer 16%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04806" model="account.account.template">
+            <field name="code">4806</field>
+            <field name="name">Umsatzsteuer 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04807" model="account.account.template">
+            <field name="code">4807</field>
+            <field name="name">Umsatzsteuer aus im Inland steuerpflichtigen EG-Lieferungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04808" model="account.account.template">
+            <field name="code">4808</field>
+            <field name="name">Umsatzsteuer aus im Inland steuerpflichtigen EG-Lieferungen 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04809" model="account.account.template">
+            <field name="code">4809</field>
+            <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04830" model="account.account.template">
+            <field name="code">4830</field>
+            <field name="name">Sonstige Verbindlichkeiten geg. Finanzbehörden</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04840" model="account.account.template">
+            <field name="code">4840</field>
+            <field name="name">Verbindlichkeiten geg. Sozialversicherungsträger</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04850" model="account.account.template">
+            <field name="code">4850</field>
+            <field name="name">Verbindlichkeiten gegenüber Mitarbeitern</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04860" model="account.account.template">
+            <field name="code">4860</field>
+            <field name="name">Verbindlichkeiten a. vermögenswirksamen Leistungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04870" model="account.account.template">
+            <field name="code">4870</field>
+            <field name="name">Verbindlichkeiten gegenüber Gesellschaftern</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04890" model="account.account.template">
+            <field name="code">4890</field>
+            <field name="name">Übrige sonstige Verbindlichkeiten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_04900" model="account.account.template">
+            <field name="code">4900</field>
+            <field name="name">Passive Rechnungsabgrenzungsposten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05000" model="account.account.template">
+            <field name="code">5000</field>
+            <field name="name">Umsatzerlöse f. eigene Erzeugnisse 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05001" model="account.account.template">
+            <field name="code">5001</field>
+            <field name="name">Erlösberichtigungen 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05005" model="account.account.template">
+            <field name="code">5005</field>
+            <field name="name">Umsatzerlöse f. eigene Erzeugnisse EG-Lieferungen 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05020" model="account.account.template">
+            <field name="code">5020</field>
+            <field name="name">Umsatzerlöse f. eigene Erzeugnisse 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05021" model="account.account.template">
+            <field name="code">5021</field>
+            <field name="name">Erlösberichtigungen 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05025" model="account.account.template">
+            <field name="code">5025</field>
+            <field name="name">Umsatzerlöse f. eigene Erzeugnisse EG-Lieferungen 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05040" model="account.account.template">
+            <field name="code">5040</field>
+            <field name="name">Steuerfreie innergemeinschaftliche Lieferungen §4 Nr. 1b UStG</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05041" model="account.account.template">
+            <field name="code">5041</field>
+            <field name="name">Umsatzerlöse f. eigene Erzeugnisse, steuerfrei</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05042" model="account.account.template">
+            <field name="code">5042</field>
+            <field name="name">Umsatzerlöse f. eigene Erzeugnisse, steuerfrei n. §4 Nr.1b UStG</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05050" model="account.account.template">
+            <field name="code">5050</field>
+            <field name="name">Umsatzerlöse für andere eigene Leistungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05051" model="account.account.template">
+            <field name="code">5051</field>
+            <field name="name">Erlösberichtigungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05100" model="account.account.template">
+            <field name="code">5100</field>
+            <field name="name">Umsatzerlöse für Waren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05101" model="account.account.template">
+            <field name="code">5101</field>
+            <field name="name">Erlösberichtigungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05190" model="account.account.template">
+            <field name="code">5190</field>
+            <field name="name">Sonstige Umsatzerlöse</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05191" model="account.account.template">
+            <field name="code">5191</field>
+            <field name="name">Erlösberichtigungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05200" model="account.account.template">
+            <field name="code">5200</field>
+            <field name="name">Bestandsveränderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05201" model="account.account.template">
+            <field name="code">5201</field>
+            <field name="name">Bestandsveränderungen a. unfertigen Erzeugnissen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05202" model="account.account.template">
+            <field name="code">5202</field>
+            <field name="name">Bestandsveränderungen a. fertigen Erzeugnissen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05300" model="account.account.template">
+            <field name="code">5300</field>
+            <field name="name">Aktivierte Eigenleistungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05400" model="account.account.template">
+            <field name="code">5400</field>
+            <field name="name">Mieterträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05410" model="account.account.template">
+            <field name="code">5410</field>
+            <field name="name">Sonstige Erlöse</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05420" model="account.account.template">
+            <field name="code">5420</field>
+            <field name="name">Eigenverbrauch</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05430" model="account.account.template">
+            <field name="code">5430</field>
+            <field name="name">Andere sonstige betriebliche Erträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05440" model="account.account.template">
+            <field name="code">5440</field>
+            <field name="name">Erträge aus Zuschreibungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05450" model="account.account.template">
+            <field name="code">5450</field>
+            <field name="name">Erträge aus Aufl. von wertb. Forderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05460" model="account.account.template">
+            <field name="code">5460</field>
+            <field name="name">Erträge aus d. Abgang v. Vermögensgegenständen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05480" model="account.account.template">
+            <field name="code">5480</field>
+            <field name="name">Erträge aus Herabsetzung von Rückstellungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+ 
+       <record id="chart_ikr_05490" model="account.account.template">
+            <field name="code">5490</field>
+            <field name="name">Periodenfremde Erträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05600" model="account.account.template">
+            <field name="code">5600</field>
+            <field name="name">Erträge aus anderen Finanzanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05710" model="account.account.template">
+            <field name="code">5710</field>
+            <field name="name">Zinserträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05730" model="account.account.template">
+            <field name="code">5730</field>
+            <field name="name">Diskonterträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05780" model="account.account.template">
+            <field name="code">5780</field>
+            <field name="name">Erträge aus Wertpapieren des Umlaufvermögens</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05790" model="account.account.template">
+            <field name="code">5790</field>
+            <field name="name">Sonstige zinsähnliche Erträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_05800" model="account.account.template">
+            <field name="code">5800</field>
+            <field name="name">Außerordentliche Erträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06000" model="account.account.template">
+            <field name="code">6000</field>
+            <field name="name">Aufwendungen f. Rohstoffe u. Fertigungsmaterial 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06001" model="account.account.template">
+            <field name="code">6001</field>
+            <field name="name">Nächlässe 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06002" model="account.account.template">
+            <field name="code">6002</field>
+            <field name="name">Bezugskosten 19%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06005" model="account.account.template">
+            <field name="code">6005</field>
+            <field name="name">Aufwendungen f. Rohstoffe u. Fertigungsmaterial 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06006" model="account.account.template">
+            <field name="code">6006</field>
+            <field name="name">Nächlässe 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06007" model="account.account.template">
+            <field name="code">6007</field>
+            <field name="name">Bezugskosten 7%</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06010" model="account.account.template">
+            <field name="code">6010</field>
+            <field name="name">Aufwendungen f. Vorprodukte / Fremdbauteile</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06030" model="account.account.template">
+            <field name="code">6030</field>
+            <field name="name">Aufwendungen f. Betriebsstoffe / Verbrauchsw.</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06040" model="account.account.template">
+            <field name="code">6040</field>
+            <field name="name">Verpackungsmaterial</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06050" model="account.account.template">
+            <field name="code">6050</field>
+            <field name="name">Energie</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06060" model="account.account.template">
+            <field name="code">6060</field>
+            <field name="name">Reparaturmaterial</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06070" model="account.account.template">
+            <field name="code">6070</field>
+            <field name="name">Aufwendungen f. sonstiges Material</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06080" model="account.account.template">
+            <field name="code">6080</field>
+            <field name="name">Aufwendungen für Waren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06090" model="account.account.template">
+            <field name="code">6090</field>
+            <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuer und 19 % Umsatzsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06091" model="account.account.template">
+            <field name="code">6091</field>
+            <field name="name">Innergemeinschaftlicher Erwerb ohne Vorsteuer und 7 % Umsatzsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06095" model="account.account.template">
+            <field name="code">6095</field>
+            <field name="name">Innergemeinschaftlicher Erwerb 19 % Vorsteuer und 19 % Umsatzsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06096" model="account.account.template">
+            <field name="code">6096</field>
+            <field name="name">Innergemeinschaftlicher Erwerb 7 % Vorsteuer und 7 % Umsatzsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06100" model="account.account.template">
+            <field name="code">6100</field>
+            <field name="name">Aufwendungen für Waren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06140" model="account.account.template">
+            <field name="code">6140</field>
+            <field name="name">Frachten und Nebenkosten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06150" model="account.account.template">
+            <field name="code">6150</field>
+            <field name="name">Vertriebsprovisionen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06160" model="account.account.template">
+            <field name="code">6160</field>
+            <field name="name">Fremdinstandhaltung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06170" model="account.account.template">
+            <field name="code">6170</field>
+            <field name="name">Sonst. Aufwendungen für bezogene Leistungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06200" model="account.account.template">
+            <field name="code">6200</field>
+            <field name="name">Löhne</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06210" model="account.account.template">
+            <field name="code">6210</field>
+            <field name="name">Urlaubs- und Weihnachtsgeld</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06220" model="account.account.template">
+            <field name="code">6220</field>
+            <field name="name">Sonst. traifliche oder vertragliche Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06230" model="account.account.template">
+            <field name="code">6230</field>
+            <field name="name">Freiwillige Zuwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06250" model="account.account.template">
+            <field name="code">6250</field>
+            <field name="name">Sachbezüge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06260" model="account.account.template">
+            <field name="code">6260</field>
+            <field name="name">Vergütung an gewerbliche Auszubildende</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06300" model="account.account.template">
+            <field name="code">6300</field>
+            <field name="name">Gehälter und Zulagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06310" model="account.account.template">
+            <field name="code">6310</field>
+            <field name="name">Urlaubs- und Weihnachtsgeld</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06320" model="account.account.template">
+            <field name="code">6320</field>
+            <field name="name">Sonst. traifliche oder vertragliche Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06330" model="account.account.template">
+            <field name="code">6330</field>
+            <field name="name">Freiwillige Zuwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06350" model="account.account.template">
+            <field name="code">6350</field>
+            <field name="name">Sachbezüge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06360" model="account.account.template">
+            <field name="code">6360</field>
+            <field name="name">Vergütung an Auszubildende</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06400" model="account.account.template">
+            <field name="code">6400</field>
+            <field name="name">Ag-Anteil Sozialversicherung (Lohnbereich)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06410" model="account.account.template">
+            <field name="code">6410</field>
+            <field name="name">Ag-Anteil Sozialversicherung (Gehaltsbereich)</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06420" model="account.account.template">
+            <field name="code">6420</field>
+            <field name="name">Beiträge zur Berufsgenossenschaft</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06440" model="account.account.template">
+            <field name="code">6440</field>
+            <field name="name">Aufwendungen für Altersversorgung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06490" model="account.account.template">
+            <field name="code">6490</field>
+            <field name="name">Aufwendungen für Unterstützung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06510" model="account.account.template">
+            <field name="code">6510</field>
+            <field name="name">Abschreibung auf immat. Vermögensgegenstände des Anlagermögens</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06515" model="account.account.template">
+            <field name="code">6515</field>
+            <field name="name">Außerplanmäßíge AfA auf immaterielle Vermögensgegenstände</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06520" model="account.account.template">
+            <field name="code">6520</field>
+            <field name="name">Abschreibung auf Sachanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06540" model="account.account.template">
+            <field name="code">6540</field>
+            <field name="name">Abschreibung auf geringwertige WG</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06550" model="account.account.template">
+            <field name="code">6550</field>
+            <field name="name">Außerplanmäßige Abschreibung auf Sachanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06550" model="account.account.template">
+            <field name="code">6550</field>
+            <field name="name">Außerplanmäßige Abschreibung auf Sachanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06560" model="account.account.template">
+            <field name="code">6560</field>
+            <field name="name">Sonderabschreibung auf Sachanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06570" model="account.account.template">
+            <field name="code">6570</field>
+            <field name="name">Unüblich hohe Abschreibung auf Umlaufvermögen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_depreciation"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06600" model="account.account.template">
+            <field name="code">6600</field>
+            <field name="name">Aufwendungen für Personaleinstellungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06610" model="account.account.template">
+            <field name="code">6610</field>
+            <field name="name">Aufwendungen für übernommene Fahrtkosten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06620" model="account.account.template">
+            <field name="code">6620</field>
+            <field name="name">Aufwendungen für Werkarzt und Arbeitssicherheit</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06630" model="account.account.template">
+            <field name="code">6630</field>
+            <field name="name">Personenbezogene Versicherungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06640" model="account.account.template">
+            <field name="code">6640</field>
+            <field name="name">Aufwendungen für Fort- und Weiterbildung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06650" model="account.account.template">
+            <field name="code">6650</field>
+            <field name="name">Aufwendungen für Dienstjubiläen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06660" model="account.account.template">
+            <field name="code">6660</field>
+            <field name="name">Aufwendungen für Belegschaftsveranstaltungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06670" model="account.account.template">
+            <field name="code">6670</field>
+            <field name="name">Aufwendungen für Werksküche u. Sozialeinrichtungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06680" model="account.account.template">
+            <field name="code">6680</field>
+            <field name="name">Ausgleichsabgabe n. Schwerbehindertengesetz</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06690" model="account.account.template">
+            <field name="code">6690</field>
+            <field name="name">Übrige sonstige Personalaufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06698" model="account.account.template">
+            <field name="code">6698</field>
+            <field name="name">Überleitungskonto KSt/KTr</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06700" model="account.account.template">
+            <field name="code">6700</field>
+            <field name="name">Mieten, Pachten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06710" model="account.account.template">
+            <field name="code">6710</field>
+            <field name="name">Leasing</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+        <record id="chart_ikr_06720" model="account.account.template">
+            <field name="code">6720</field>
+            <field name="name">Lizenzen u. Konzessionen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06730" model="account.account.template">
+            <field name="code">6730</field>
+            <field name="name">Gebühren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06750" model="account.account.template">
+            <field name="code">6750</field>
+            <field name="name">Kosten des Geldverkehrs</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06760" model="account.account.template">
+            <field name="code">6760</field>
+            <field name="name">Provisionsaufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06770" model="account.account.template">
+            <field name="code">6770</field>
+            <field name="name">Rechts- und Beratungskosten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06800" model="account.account.template">
+            <field name="code">6800</field>
+            <field name="name">Büromaterial</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06810" model="account.account.template">
+            <field name="code">6810</field>
+            <field name="name">Zeitungen unf Fachliteratur</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06820" model="account.account.template">
+            <field name="code">6820</field>
+            <field name="name">Postgebühren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06860" model="account.account.template">
+            <field name="code">6860</field>
+            <field name="name">Bewirtung und Präsentation</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06870" model="account.account.template">
+            <field name="code">6870</field>
+            <field name="name">Werbung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06880" model="account.account.template">
+            <field name="code">6880</field>
+            <field name="name">Spenden</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06900" model="account.account.template">
+            <field name="code">6900</field>
+            <field name="name">Versicherungsbeiträge</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06920" model="account.account.template">
+            <field name="code">6920</field>
+            <field name="name">Beiträge an Wirtschaftsverbände</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06930" model="account.account.template">
+            <field name="code">6930</field>
+            <field name="name">Verluste aus Schadensfälle</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06940" model="account.account.template">
+            <field name="code">6940</field>
+            <field name="name">Sonstige Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06950" model="account.account.template">
+            <field name="code">6950</field>
+            <field name="name">Abschreibungen auf Forderungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06951" model="account.account.template">
+            <field name="code">6951</field>
+            <field name="name">Abschreibungen auf Forderungen wg. Uneinbringlichkeit</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06952" model="account.account.template">
+            <field name="code">6952</field>
+            <field name="name">Einstellunge in Einzelwertberichtigung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06953" model="account.account.template">
+            <field name="code">6953</field>
+            <field name="name">Einstellung in Pauschalwertberichtigung</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06960" model="account.account.template">
+            <field name="code">6960</field>
+            <field name="name">Verluste aus dem Abgang von Vermögensgegenständen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06980" model="account.account.template">
+            <field name="code">6980</field>
+            <field name="name">Zuführung zu Rückstellungen für Gewährleistungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_06990" model="account.account.template">
+            <field name="code">6990</field>
+            <field name="name">Periodenfremde Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07000" model="account.account.template">
+            <field name="code">7000</field>
+            <field name="name">Gewerbekapitalsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07000" model="account.account.template">
+            <field name="code">7000</field>
+            <field name="name">Gewerbekapitalsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07010" model="account.account.template">
+            <field name="code">7010</field>
+            <field name="name">Vermögensteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07020" model="account.account.template">
+            <field name="code">7020</field>
+            <field name="name">Grundsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07030" model="account.account.template">
+            <field name="code">7030</field>
+            <field name="name">Kraftfahrzeugsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07070" model="account.account.template">
+            <field name="code">7070</field>
+            <field name="name">Ausfuhrzölle</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07080" model="account.account.template">
+            <field name="code">7080</field>
+            <field name="name">Verbrauchsteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07090" model="account.account.template">
+            <field name="code">7090</field>
+            <field name="name">Sonstige betriebliche Steuern</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07400" model="account.account.template">
+            <field name="code">7400</field>
+            <field name="name">Abschreibungen auf Finanzanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07420" model="account.account.template">
+            <field name="code">7420</field>
+            <field name="name">Abschreibungen auf Wertpapiere</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07450" model="account.account.template">
+            <field name="code">7450</field>
+            <field name="name">Verluste aus dem Abgang von Finanzanlagen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07460" model="account.account.template">
+            <field name="code">7460</field>
+            <field name="name">Verluste aus dem Abgang von Wertpapieren des Umlaufvermögens</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07510" model="account.account.template">
+            <field name="code">7510</field>
+            <field name="name">Kurzfristige Zinsaufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07520" model="account.account.template">
+            <field name="code">7520</field>
+            <field name="name">Lanfristige Zinsaufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07530" model="account.account.template">
+            <field name="code">7530</field>
+            <field name="name">Diskontaufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07590" model="account.account.template">
+            <field name="code">7590</field>
+            <field name="name">Sonstige Zinsen und ähnliche Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07600" model="account.account.template">
+            <field name="code">7600</field>
+            <field name="name">Außerordentliche Aufwendungen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07700" model="account.account.template">
+            <field name="code">7700</field>
+            <field name="name">Gewerbeertragssteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07710" model="account.account.template">
+            <field name="code">7710</field>
+            <field name="name">Körperschaftssteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_07720" model="account.account.template">
+            <field name="code">7720</field>
+            <field name="name">Kapitalertragssteuer</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_08000" model="account.account.template">
+            <field name="code">8000</field>
+            <field name="name">Eröffnungsbilanzkonto</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_09000" model="account.account.template">
+            <field name="code">9000</field>
+            <field name="name">Saldovorträge Sachkonten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record> 
+
+        <record id="chart_ikr_09008" model="account.account.template">
+            <field name="code">9008</field>
+            <field name="name">Saldovorträge Debitoren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_09009" model="account.account.template">
+            <field name="code">9009</field>
+            <field name="name">Saldovorträge Kreditoren</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="chart_ikr_09090" model="account.account.template">
+            <field name="code">9090</field>
+            <field name="name">Summenvortragskonto</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+            <field name="chart_template_id" ref="l10n_chart_de_ikr"/>
+        </record>
+
+        <record id="l10n_chart_de_ikr" model="account.chart.template">
+            <field name="cash_account_code_prefix">288</field>
+            <field name="bank_account_code_prefix">280</field>
+            <field name="code_digits">4</field>
+            <field name="property_account_receivable_id" ref="chart_ikr_02400"/>
+            <field name="property_account_payable_id" ref="chart_ikr_04400"/>
+            <field name="property_account_expense_categ_id" ref="chart_ikr_06080"/>
+            <field name="property_account_income_categ_id" ref="chart_ikr_05100"/>
+            <field name="income_currency_exchange_account_id" ref="chart_ikr_06750"/>
+            <field name="expense_currency_exchange_account_id" ref="chart_ikr_06750"/>
+        </record>
+
+    </data>
+</odoo>

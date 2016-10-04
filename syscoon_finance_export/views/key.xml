@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_export_key_view" model="ir.ui.view">
+            <field name="name">view.export.key.view</field>
+            <field name="model">export.key</field>
+            <field name="arch" type="xml">
+                <form string="Booking Key Configuration">
+                    <sheet>
+                        <div>
+                            <h1 attrs="{'invisible': [('name', '=', False)]}">
+                                <label for="name" class="oe_edit_only"/>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="vat_code"/>
+                            <field name="export_key"/>
+                            <field name="active"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_export_key_tree" model="ir.ui.view">
+            <field name="name">view.export.key.tree</field>
+            <field name="model">export.key</field>
+            <field name="arch" type="xml">
+                <tree string="Booking Key Configuration">
+                    <field name="vat_code"/>
+                    <field name="export_key"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_open_export_key_configuration_tree" model="ir.actions.act_window">
+            <field name="name">Configure Booking Keys</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">export.key</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_export_key_tree"/>
+        </record>
+
+        <menuitem id="menu_export_key_configuration" name="Booking Keys"
+            parent="menu_finance_export_export_configuration"
+            action="action_open_export_key_configuration_tree" sequence="100"/>
+
+    </data>
+</odoo>

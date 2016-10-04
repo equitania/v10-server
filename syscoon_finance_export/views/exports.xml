@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_export_exports_view" model="ir.ui.view">
+            <field name="name">view.export.export.view</field>
+            <field name="model">export.exports</field>
+            <field name="arch" type="xml">
+                <form string="Export File" create="false" edit="false">
+                    <sheet>
+                        <div>
+                            <h1>
+                                <label for="name" class="oe_edit_only"/>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="company_id"/>
+                            <field name="date_range"/>
+                            <field name="file_name" invisible="1"/>
+                            <field name="file" filename="file_name"/>
+                        </group>
+                        <group>
+                            <field name="note"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_export_exports_tree" model="ir.ui.view">
+            <field name="name">view.export.exports.tree</field>
+            <field name="model">export.exports</field>
+            <field name="arch" type="xml">
+                <tree string="Export Files" create="false" edit="false">
+                    <field name="name"/>
+                    <field name="date_range"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_open_export_exports_tree" model="ir.actions.act_window">
+            <field name="name">Export Files</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">export.exports</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_export_exports_tree"/>
+        </record>
+
+        <menuitem id="menu_export_exports" name="Export Files"
+            parent="menu_finance_export_moves"
+            action="action_open_export_exports_tree" sequence="20"/>
+
+    </data>
+</odoo>
