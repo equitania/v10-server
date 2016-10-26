@@ -26,6 +26,8 @@ DATE_LENGTH = len(date.today().strftime(DATE_FORMAT))
 DATETIME_LENGTH = len(datetime.now().strftime(DATETIME_FORMAT))
 EMPTY_DICT = frozendict()
 
+RENAMED_ATTRS = [('select', 'index'), ('digits_compute', 'digits')]
+
 _logger = logging.getLogger(__name__)
 _schema = logging.getLogger(__name__[:-7] + '.schema')
 
@@ -452,6 +454,12 @@ class Field(object):
             attrs['compute'] = self._compute_sparse
             if not attrs.get('readonly'):
                 attrs['inverse'] = self._inverse_sparse
+
+        # check for renamed attributes (conversion errors)
+        for key1, key2 in RENAMED_ATTRS:
+            if key1 in attrs:
+                _logger.warning("Field %s: parameter %r is no longer supported; use %r instead.",
+                                self, key1, key2)
 
         self.set_all_attrs(attrs)
 
@@ -894,10 +902,12 @@ class Field(object):
             env.invalidate(spec)
 
         else:
-            # simply write to the database, and update cache
+            # Write to database
             write_value = self.convert_to_write(self.convert_to_record(value, record), record)
             record.write({self.name: write_value})
-            record._cache[self] = value
+            # Update the cache unless value contains a new record
+            if not (self.relational and not all(value)):
+                record._cache[self] = value
 
     ############################################################################
     #
@@ -1099,6 +1109,8 @@ class Integer(Field):
         'group_operator': 'sum',
     }
 
+    _description_group_operator = property(attrgetter('group_operator'))
+
     def convert_to_column(self, value, record):
         return int(value or 0)
 
@@ -1160,6 +1172,7 @@ class Float(Field):
 
     _related__digits = property(attrgetter('_digits'))
     _description_digits = property(attrgetter('digits'))
+    _description_group_operator = property(attrgetter('group_operator'))
 
     def convert_to_column(self, value, record):
         result = float(value or 0.0)
@@ -1201,6 +1214,7 @@ class Monetary(Field):
 
     _related_currency_field = property(attrgetter('currency_field'))
     _description_currency_field = property(attrgetter('currency_field'))
+    _description_group_operator = property(attrgetter('group_operator'))
 
     def _setup_regular_base(self, model):
         super(Monetary, self)._setup_regular_base(model)
@@ -1283,7 +1297,7 @@ class _String(Field):
             return self.translate(callback, value)
         else:
             return value
-    
+
 
 class Char(_String):
     """ Basic string field, can be length-limited, usually displayed as a
@@ -1983,7 +1997,7 @@ class _RelationalMulti(_Relational):
 
     def convert_to_write(self, value, record):
         # make result with new and existing records
-        result = [(5,)]
+        result = [(6, 0, [])]
         for record in value:
             if not record.id:
                 values = {name: record[name] for name in record._cache}
@@ -1994,7 +2008,7 @@ class _RelationalMulti(_Relational):
                 values = record._convert_to_write(values)
                 result.append((1, record.id, values))
             else:
-                result.append((4, record.id))
+                result[0][2].append(record.id)
         return result
 
     def convert_to_onchange(self, value, record, fnames=()):
@@ -2167,7 +2181,11 @@ class One2many(_RelationalMulti):
                     query = "SELECT id FROM %s WHERE %s=%%s AND id <> ALL(%%s)" % (comodel._table, inverse)
                     comodel._cr.execute(query, (record.id, act[2] or [0]))
                     lines = comodel.browse([row[0] for row in comodel._cr.fetchall()])
-                    lines.write({inverse: False})
+                    inverse_field = comodel._fields[inverse]
+                    if inverse_field.ondelete == 'cascade':
+                        lines.unlink()
+                    else:
+                        lines.write({inverse: False})
 
 
 class Many2many(_RelationalMulti):

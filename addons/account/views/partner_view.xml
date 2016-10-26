@@ -39,12 +39,12 @@
                             <field name="tax_ids" widget="one2many_list" nolabel="1">
                                 <tree name="tax_map_tree" string="Tax Mapping" editable="bottom">
                                     <field name="tax_src_id" domain="[('type_tax_use', '!=', None)]"/>
-                                    <field name="tax_dest_id" domain="[('type_tax_use', '!=', None), ('price_include', '=', False)]"/>
+                                    <field name="tax_dest_id" domain="[('type_tax_use', '!=', None)]"/>
                                 </tree>
                                 <form name="tax_map_form" string="Tax Mapping">
                                     <group>
                                         <field name="tax_src_id" domain="[('type_tax_use', '!=', None)]"/>
-                                        <field name="tax_dest_id" domain="[('type_tax_use', '!=', None), ('price_include', '=', False)]"/>
+                                        <field name="tax_dest_id" domain="[('type_tax_use', '!=', None)]"/>
                                     </group>
                                 </form>
                             </field>
@@ -102,7 +102,7 @@
                         icon="fa-pencil-square-o"
                         name="open_partner_history"
                         attrs="{'invisible': [('customer', '=', False)]}"
-                        context="{'search_default_partner_id': active_id,'default_partner_id': active_id}">
+                        context="{'default_partner_id': active_id}">
                         <div class="o_form_field o_stat_info">
                             <span class="o_stat_value"><field name="total_invoiced" widget='monetary' options="{'currency_field': 'currency_id'}"/></span>
                             <span class="o_stat_text">Invoiced</span>
