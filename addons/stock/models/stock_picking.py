@@ -108,6 +108,15 @@ class PickingType(models.Model):
             res.append((picking_type.id, name))
         return res
 
+    @api.model
+    def name_search(self, name, args=None, operator='ilike', limit=100):
+        args = args or []
+        domain = []
+        if name:
+            domain = ['|', ('name', operator, name), ('warehouse_id.name', operator, name)]
+        picks = self.search(domain + args, limit=limit)
+        return picks.name_get()
+
     @api.onchange('code')
     def onchange_picking_code(self):
         if self.code == 'incoming':
@@ -915,7 +924,7 @@ class Picking(models.Model):
                     vals = self._prepare_values_extra_move(pack_operation, product, remaining_qty)
                     moves |= moves.create(vals)
         if moves:
-            moves.action_confirm()
+            moves.with_context(skip_check=True).action_confirm()
         return moves
 
     @api.model
@@ -958,6 +967,7 @@ class Picking(models.Model):
         """ Move all non-done lines into a new backorder picking. If the key 'do_only_split' is given in the context, then move all lines not in context.get('split', []) instead of all non-done lines.
         """
         # TDE note: o2o conversion, todo multi
+        backorders = self.env['stock.picking']
         for picking in self:
             backorder_moves = backorder_moves or picking.move_lines
             if self._context.get('do_only_split'):
@@ -978,7 +988,8 @@ class Picking(models.Model):
                 picking.write({'date_done': time.strftime(DEFAULT_SERVER_DATETIME_FORMAT)})
             backorder_picking.action_confirm()
             backorder_picking.action_assign()
-        return True
+            backorders |= backorder_picking
+        return backorders
 
     @api.multi
     def put_in_pack(self):

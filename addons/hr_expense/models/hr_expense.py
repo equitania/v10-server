@@ -218,9 +218,10 @@ class HrExpense(models.Model):
                     raise UserError(_("No Home Address found for the employee %s, please configure one.") % (expense.employee_id.name))
                 emp_account = expense.employee_id.address_home_id.property_account_payable_id.id
 
+            aml_name = expense.employee_id.name + ': ' + expense.name.split('\n')[0][:64]
             move_lines.append({
                     'type': 'dest',
-                    'name': expense.employee_id.name,
+                    'name': aml_name,
                     'price': total,
                     'account_id': emp_account,
                     'date_maturity': acc_date,
@@ -253,9 +254,10 @@ class HrExpense(models.Model):
                 if not account:
                     raise UserError(_('Please configure Default Expense account for Product expense: `property_account_expense_categ_id`.'))
 
+            aml_name = expense.employee_id.name + ': ' + expense.name.split('\n')[0][:64]
             move_line = {
                     'type': 'src',
-                    'name': expense.name.split('\n')[0][:64],
+                    'name': aml_name,
                     'price_unit': expense.unit_amount,
                     'quantity': expense.quantity,
                     'price': expense.total_amount,
@@ -415,6 +417,13 @@ class HrExpenseSheet(models.Model):
         if vals.get('employee_id'):
             self._add_followers()
         return res
+
+    @api.multi
+    def unlink(self):
+        for expense in self:
+            if expense.state == "post":
+                raise UserError(_("You cannot delete a posted expense."))
+        super(HrExpenseSheet, self).unlink()
 
     @api.multi
     def set_to_paid(self):
