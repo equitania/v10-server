@@ -4,16 +4,20 @@
 from datetime import timedelta
 
 from odoo import api, fields, models
+from odoo.tools.safe_eval import safe_eval
 
 
 class ProjectTaskType(models.Model):
 
     _inherit = 'project.task.type'
 
+    def _default_domain_rating_template_id(self):
+        return [('model', '=', 'project.task')]
+
     rating_template_id = fields.Many2one(
         'mail.template',
         string='Rating Email Template',
-        domain=[('model', '=', 'project.task')],
+        domain=lambda self: self._default_domain_rating_template_id(),
         help="Select an email template. An email will be sent to the customer when the task reach this step.")
     auto_validation_kanban_state = fields.Boolean('Automatic kanban status', default=False,
         help="Automatically modify the kanban state when the customer reply to the feedback for this stage.\n"
@@ -101,7 +105,9 @@ class Project(models.Model):
     def action_view_task_rating(self):
         """ return the action to see all the rating about the tasks of the project """
         action = self.env['ir.actions.act_window'].for_xml_id('rating', 'action_view_rating')
-        return dict(action, domain=[('res_id', 'in', self.tasks.ids), ('res_model', '=', 'project.task')])
+        action_domain = safe_eval(action['domain']) if action['domain'] else []
+        domain = action_domain + [('res_id', 'in', self.tasks.ids), ('res_model', '=', 'project.task')]
+        return dict(action, domain=domain)
 
     @api.multi
     def action_view_all_rating(self):

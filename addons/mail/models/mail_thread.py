@@ -5,6 +5,8 @@ import base64
 import datetime
 import dateutil
 import email
+import hashlib
+import hmac
 import json
 import lxml
 import logging
@@ -568,6 +570,13 @@ class MailThread(models.AbstractModel):
             because portal users have a different Inbox action than classic users. """
         return 'mail.mail_channel_action_client_chat'
 
+    @api.model
+    def _generate_notification_token(self, base_link, params):
+        secret = self.env['ir.config_parameter'].sudo().get_param('database.secret')
+        token = '%s?%s' % (base_link, ' '.join('%s=%s' % (key, params[key]) for key in sorted(params.keys())))
+        hm = hmac.new(str(secret), token, hashlib.sha1).hexdigest()
+        return hm
+
     @api.multi
     def _notification_link_helper(self, link_type, **kwargs):
         if kwargs.get('message_id'):
@@ -576,24 +585,29 @@ class MailThread(models.AbstractModel):
             }
         else:
             base_params = {
-                'model': kwargs.pop('model', self._name),
-                'res_id': kwargs.pop('res_id', self.ids and self.ids[0] or False),
+                'model': kwargs.get('model', self._name),
+                'res_id': kwargs.get('res_id', self.ids and self.ids[0] or False),
             }
 
-        link = False
         if link_type in ['view', 'assign', 'follow', 'unfollow']:
             params = dict(base_params)
-            link = '/mail/%s?%s' % (link_type, url_encode(params))
-        elif link_type == 'workflow':
-            params = dict(base_params, signal=kwargs['signal'])
-            link = '/mail/workflow?%s' % url_encode(params)
-        elif link_type == 'method':
-            method = kwargs.pop('method')
-            params = dict(base_params, method=method, params=json.dumps(kwargs))
-            link = '/mail/method?%s' % url_encode(params)
+            base_link = '/mail/%s' % link_type
         elif link_type == 'new':
-            params = dict(base_params, action_id=kwargs.get('action_id'))
-            link = '/mail/new?%s' % url_encode(params)
+            params = dict(base_params, action_id=kwargs.get('action_id', ''))
+            base_link = '/mail/new'
+        elif link_type == 'controller':
+            controller = kwargs.pop('controller')
+            params = dict(base_params)
+            params.pop('model')
+            base_link = '%s' % controller
+        else:
+            return ''
+
+        if link_type not in ['view', 'new']:
+            token = self._generate_notification_token(base_link, params)
+            params['token'] = token
+
+        link = '%s?%s' % (base_link, url_encode(params))
         return link
 
     @api.multi
@@ -1095,37 +1109,23 @@ class MailThread(models.AbstractModel):
                 reply_match = False
 
         if reply_match:
-            compat_mode = False
             msg_references = tools.mail_header_msgid_re.findall(thread_references)
             mail_messages = MailMessage.sudo().search([('message_id', 'in', msg_references)], limit=1)
-
-            # message is a reply to an existing thread (6.1 compatibility)
-            # do not match forwarded emails from another OpenERP system (thread_id collision!)
-            if not mail_messages and local_hostname == reply_hostname and reply_thread_id and reply_model in self.env:
-                mail_messages = MailMessage.search([
-                    ('message_id', '=', False),
-                    ('model', '=', reply_model),
-                    ('res_id', '=', reply_thread_id)])
-                compat_mode = True
 
             if mail_messages:
                 model, thread_id = mail_messages.model, mail_messages.res_id
                 if not reply_private:  # TDE note: not sure why private mode as no alias search, copying existing behavior
                     dest_aliases = Alias.search([('alias_name', 'in', rcpt_tos_localparts)], limit=1)
 
-                # TDE Note: compat mode = without context key, why ? because
                 route = self.message_route_verify(
                     message, message_dict,
                     (model, thread_id, custom_values, self._uid, dest_aliases),
                     update_author=True, assert_model=reply_private, create_fallback=True,
                     allow_private=reply_private, drop_alias=True)
                 if route:
-                    # TDE Note: compat mode: parent is invalid for a compat-reply
-                    # message_dict.pop('parent_id', None)
-                    # TDE note: add compat mode for compat mode in debug
                     _logger.info(
-                        'Routing mail from %s to %s with Message-Id %s%s: direct reply to msg: model: %s, thread_id: %s, custom_values: %s, uid: %s',
-                        email_from, email_to, message_id, compat_mode and ' (compat mode)' or '', model, thread_id, custom_values, self._uid)
+                        'Routing mail from %s to %s with Message-Id %s: direct reply to msg: model: %s, thread_id: %s, custom_values: %s, uid: %s',
+                        email_from, email_to, message_id, model, thread_id, custom_values, self._uid)
                     return [route]
                 elif route is False:
                     return []
