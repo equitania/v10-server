@@ -1,5 +1,15 @@
 ## Modul eq_myodoo_backend_theme
 
+### 01.12.2016
+### Version 1.0.7
+#### FIX
+- Fix für den Willkommens-Screen im Bereich Sales
+
+### 28.11.2016
+### Version 1.0.6
+#### CHG
+- Index.html angepasst
+
 
 ### 28.11.2016
 ### Version 1.0.5
