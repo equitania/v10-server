@@ -72,6 +72,9 @@ odoo.define('website_sale.website_sale', function (require) {
 
     var base = require('web_editor.base');
     var ajax = require('web.ajax');
+    var utils = require('web.utils');
+    var core = require('web.core');
+    var _t = core._t;
 
     if(!$('.oe_website_sale').length) {
         return $.Deferred().reject("DOM doesn't contain '.oe_website_sale'");
@@ -226,9 +229,15 @@ odoo.define('website_sale.website_sale', function (require) {
         });
 
         function price_to_str(price) {
-            price = Math.round(price * 100) / 100;
-            var dec = Math.round((price % 1) * 100);
-            return price + (dec ? '' : '.0') + (dec%10 ? '' : '0');
+            var l10n = _t.database.parameters;
+            var precision = 2;
+
+            if ($(".decimal_precision").length) {
+                precision = parseInt($(".decimal_precision").first().data('precision'));
+            }
+            var formatted = _.str.sprintf('%.' + precision + 'f', price).split('.');
+            formatted[0] = utils.insert_thousand_seps(formatted[0]);
+            return formatted.join(l10n.decimal_point);
         }
 
         function update_product_image(event_source, product_id) {
