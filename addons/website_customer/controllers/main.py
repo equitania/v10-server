@@ -42,7 +42,7 @@ class WebsiteCustomer(http.Controller):
 
         if tag_id:
             tag_id = unslug(tag_id)[1] or 0
-            domain += [('tag_ids', 'in', tag_id)]
+            domain += [('website_tag_ids', 'in', tag_id)]
 
         # group by country, based on customers found with the search(domain)
         countries = Partner.sudo().read_group(domain, ["id", "country_id"], groupby="country_id", orderby="country_id")
@@ -51,7 +51,7 @@ class WebsiteCustomer(http.Controller):
         if country_id:
             domain += [('country_id', '=', country_id)]
             curr_country = Country.browse(country_id)
-            if country_id not in map(lambda x: x['country_id'][0], countries):
+            if country_id not in (x['country_id'][0] for x in countries if x['country_id']):
                 if curr_country.exists():
                     countries.append({
                         'country_id_count': 0,

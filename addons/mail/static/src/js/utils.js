@@ -69,10 +69,10 @@ function linkify(text, attrs) {
     attrs = _.map(attrs, function (value, key) {
         return key + '="' + _.escape(value) + '"';
     }).join(' ');
-    return text.replace(/&nbsp;/g, '\u00A0').replace(url_regexp, function (url) {
+    return text.replace(url_regexp, function (url) {
         var href = (!/^(f|ht)tps?:\/\//i.test(url)) ? "http://" + url : url;
         return '<a ' + attrs + ' href="' + href + '">' + url + '</a>';
-    }).replace(/\u00A0/g, '&nbsp;');
+    });
 }
 
 function add_link (node, transform_children) {
@@ -130,7 +130,6 @@ var accented_letters_mapping = {
     'oe': 'œ',
     'u': '[ùúûűü]',
     'y': '[ýÿ]',
-    ' ': '[()\\[\\]]',
 };
 function unaccent (str) {
     _.each(accented_letters_mapping, function (value, key) {
