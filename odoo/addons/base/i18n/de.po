@@ -8,10 +8,10 @@
 # Anja Funk <anja.funk@afimage.de>, 2016
 # Ralf Hilgenstock <rh@dialoge.info>, 2016
 # Rudolf Schnapka <rs@techno-flex.de>, 2016
+# Wolfgang Taferner <wolfgang.transifex@service.wt-io-it.at>, 2016
 # Martin K <martinkuenz@gmail.com>, 2016
 # Thomas A. Jaeger <tj@jamotion.ch>, 2016
 # Thorsten Vocks <thorsten.vocks@openbig.org>, 2016
-# Wolfgang Taferner <wolfgang.transifex@service.wt-io-it.at>, 2016
 # Markus Menner <markus.menner@axxelia.com>, 2016
 # Henry Mineehen <info@mineehen.de>, 2016
 # Tina Rittmüller <tr@ife.de>, 2016
@@ -31,8 +31,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-14 15:54+0000\n"
-"PO-Revision-Date: 2016-11-14 15:54+0000\n"
+"POT-Creation-Date: 2017-01-27 11:58+0000\n"
+"PO-Revision-Date: 2017-01-27 11:58+0000\n"
 "Last-Translator: Niki Waibel <niki.waibel@gmail.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/odoo/teams/41243/de/)\n"
 "MIME-Version: 1.0\n"
@@ -5661,7 +5661,7 @@ msgstr "Begriffe"
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_view_base
 msgid "Apply"
-msgstr "Anwenden"
+msgstr "Übernehmen"
 
 #. module: base
 #: code:addons/base/module/module.py:557
@@ -5914,6 +5914,12 @@ msgstr "Automatische Übersetzung mittels Gengo API"
 #: model:ir.model.fields,field_description:base.field_ir_module_module_auto_install
 msgid "Automatic Installation"
 msgstr "Automatische Installation"
+
+#. module: base
+#: code:addons/base/module/module.py:650
+#, python-format
+msgid "Automatic install of downloaded Apps is currently disabled."
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_translation_state
@@ -7729,7 +7735,7 @@ msgstr "Kunden"
 #. module: base
 #: model:ir.module.module,summary:base.module_contacts
 msgid "Customers, Vendors, Partners,..."
-msgstr "Kunden, Verkäufer, Partner, …"
+msgstr "Kunden, Lieferanten, Partner, …"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_ui_view_custom
@@ -9236,7 +9242,7 @@ msgstr "Französich Guyana"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
 msgid "French Payroll"
-msgstr "Französische Lohnkonten"
+msgstr "Französische Lohnabrechnung"
 
 #. module: base
 #: model:res.country,name:base.tf
@@ -14567,12 +14573,12 @@ msgstr "Zustellungsadresse"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_currency_search
 msgid "Show active currencies"
-msgstr "Zeige aktive Währungen"
+msgstr "Aktive Währungen anzeigen"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_currency_search
 msgid "Show inactive currencies"
-msgstr "Zeige inaktive Währungen"
+msgstr "Inaktive Währungen anzeigen"
 
 #. module: base
 #: model:res.country,name:base.sl
@@ -15972,6 +15978,13 @@ msgstr "Zu entfernen"
 #: selection:ir.module.module.dependency,state:0
 msgid "To be upgraded"
 msgstr "Bereit für Upgrade"
+
+#. module: base
+#: code:addons/base/module/module.py:651
+#, python-format
+msgid ""
+"To enable it, make sure this directory exists and is writable on the server:"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_actions_todo_tree
@@ -17686,7 +17699,7 @@ msgstr "z.B. Verkaufsleiter"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 msgid "e.g. Update order quantity"
-msgstr "z.B. Aktualisieren der Produktanzahl"
+msgstr "z.B. Aktualisieren der Produktmenge"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_import_language

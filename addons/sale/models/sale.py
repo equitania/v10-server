@@ -440,7 +440,7 @@ class SaleOrder(models.Model):
     def action_done(self):
         self.write({'state': 'done'})
 
-    @api.model
+    @api.multi
     def _prepare_procurement_group(self):
         return {'name': self.name}
 
@@ -502,10 +502,12 @@ class SaleOrder(models.Model):
             for tax in line.tax_id:
                 group = tax.tax_group_id
                 res.setdefault(group, 0.0)
-                amount = tax.compute_all(line.price_reduce + base_tax, quantity=line.product_uom_qty)['taxes'][0]['amount']
+                amount = tax.compute_all(line.price_reduce + base_tax, quantity=line.product_uom_qty,
+                                         product=line.product_id, partner=line.order_partner_id)['taxes'][0]['amount']
                 res[group] += amount
                 if tax.include_base_amount:
-                    base_tax += tax.compute_all(line.price_reduce + base_tax, quantity=1)['taxes'][0]['amount']
+                    base_tax += tax.compute_all(line.price_reduce + base_tax, quantity=1, product=line.product_id,
+                                                partner=line.order_partner_id)['taxes'][0]['amount']
         res = sorted(res.items(), key=lambda l: l[0].sequence)
         res = map(lambda l: (l[0].name, l[1]), res)
         return res
@@ -903,13 +905,18 @@ class SaleOrderLine(models.Model):
         PricelistItem = self.env['product.pricelist.item']
         field_name = 'lst_price'
         currency_id = None
+        product_currency = None
         if rule_id:
             pricelist_item = PricelistItem.browse(rule_id)
             if pricelist_item.base == 'standard_price':
                 field_name = 'standard_price'
+            if pricelist_item.base == 'pricelist' and pricelist_item.base_pricelist_id:
+                field_name = 'price'
+                product = product.with_context(pricelist=pricelist_item.base_pricelist_id.id)
+                product_currency = pricelist_item.base_pricelist_id.currency_id
             currency_id = pricelist_item.pricelist_id.currency_id
 
-        product_currency = (product.company_id and product.company_id.currency_id) or self.env.user.company_id.currency_id
+        product_currency = product_currency or(product.company_id and product.company_id.currency_id) or self.env.user.company_id.currency_id
         if not currency_id:
             currency_id = product_currency
             cur_factor = 1.0

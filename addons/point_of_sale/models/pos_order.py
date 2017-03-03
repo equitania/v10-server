@@ -17,7 +17,7 @@ _logger = logging.getLogger(__name__)
 
 class PosOrder(models.Model):
     _name = "pos.order"
-    _description = "Point of Sale"
+    _description = "Point of Sale Orders"
     _order = "id desc"
 
     @api.model
@@ -198,6 +198,7 @@ class PosOrder(models.Model):
 
         grouped_data = {}
         have_to_group_by = session and session.config_id.group_by or False
+        rounding_method = session and session.config_id.company_id.tax_calculation_rounding_method
 
         for order in self.filtered(lambda o: not o.account_move or order.state == 'paid'):
             current_company = order.sale_journal.company_id
@@ -295,6 +296,14 @@ class PosOrder(models.Model):
                         'tax_line_id': tax['id'],
                         'partner_id': partner_id
                     })
+
+            # round tax lines per order
+            if rounding_method == 'round_globally':
+                for group_key, group_value in grouped_data.iteritems():
+                    if group_key[0] == 'tax':
+                        for line in group_value:
+                            line['credit'] = cur.round(line['credit'])
+                            line['debit'] = cur.round(line['debit'])
 
             # counterpart
             insert_data('counter_part', {
@@ -737,7 +746,7 @@ class PosOrderLine(models.Model):
         return line
 
     company_id = fields.Many2one('res.company', string='Company', required=True, default=lambda self: self.env.user.company_id)
-    name = fields.Char(string='Line No', required=True, copy=False, default=lambda self: self.env['ir.sequence'].next_by_code('pos.order.line'))
+    name = fields.Char(string='Line No', required=True, copy=False)
     notice = fields.Char(string='Discount Notice')
     product_id = fields.Many2one('product.product', string='Product', domain=[('sale_ok', '=', True)], required=True, change_default=True)
     price_unit = fields.Float(string='Unit Price', digits=0)
@@ -750,6 +759,31 @@ class PosOrderLine(models.Model):
     tax_ids = fields.Many2many('account.tax', string='Taxes', readonly=True)
     tax_ids_after_fiscal_position = fields.Many2many('account.tax', compute='_get_tax_ids_after_fiscal_position', string='Taxes')
     pack_lot_ids = fields.One2many('pos.pack.operation.lot', 'pos_order_line_id', string='Lot/serial Number')
+
+    @api.model
+    def create(self, values):
+        if values.get('order_id') and not values.get('name'):
+            # set name based on the sequence specified on the config
+            config_id = self.env['pos.order'].browse(values['order_id']).session_id.config_id.id
+            # HACK: sequence created in the same transaction as the config
+            # cf TODO master is pos.config create
+            # remove me saas-15
+            self.env.cr.execute("""
+                SELECT s.id
+                FROM ir_sequence s
+                JOIN pos_config c
+                  ON s.create_date=c.create_date
+                WHERE c.id = %s
+                  AND s.code = 'pos.order.line'
+                LIMIT 1
+                """, (config_id,))
+            sequence = self.env.cr.fetchone()
+            if sequence:
+                values['name'] = self.env['ir.sequence'].browse(sequence[0])._next()
+        if not values.get('name'):
+            # fallback on any pos.order sequence
+            values['name'] = self.env['ir.sequence'].next_by_code('pos.order.line')
+        return super(PosOrderLine, self).create(values)
 
     @api.depends('price_unit', 'tax_ids', 'qty', 'discount', 'product_id')
     def _compute_amount_line_all(self):
