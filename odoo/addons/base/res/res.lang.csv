@@ -1,3 +1,4 @@
 "id","name","code","iso_code","direction","grouping","decimal_point","thousands_sep","date_format","time_format","translatable"
 "base.lang_en","English","en_US","en","Left-to-Right","[3,0]",".",",","%m/%d/%Y","%H:%M:%S","True"
+"base.lang_fr","French / Français","fr_FR","fr","Left-to-Right","[3,0]",","," ","%d/%m/%Y","%H:%M:%S","True"
 "base.lang_de","German / Deutsch","de_DE","de","Left-to-Right","[3,0]",",",".","%d.%m.%Y","%H:%M:%S","True"

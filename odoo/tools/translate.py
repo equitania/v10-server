@@ -35,6 +35,7 @@ SKIPPED_ELEMENTS = ('script', 'style', 'title')
 
 _LOCALE2WIN32 = {
     'de_DE': 'German_Germany',
+    'fr_FR': 'French_France',
 }
 
 # These are not all english small words, just those that could potentially be isolated within views
