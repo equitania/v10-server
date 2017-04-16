@@ -669,7 +669,7 @@ class BaseModel(object):
                 field = cls._fields.get(name)
                 if not field:
                     _logger.warning("method %s.%s: @constrains parameter %r is not a field name", cls._name, attr, name)
-                if not (field.store or field.inverse):
+                elif not (field.store or field.inverse):
                     _logger.warning("method %s.%s: @constrains parameter %r is not writeable", cls._name, attr, name)
             methods.append(func)
 
@@ -3556,12 +3556,17 @@ class BaseModel(object):
 
             if new_vals:
                 # put the values of pure new-style fields into cache, and inverse them
+                self.modified(set(new_vals) - set(old_vals))
                 for record in self:
                     record._cache.update(record._convert_to_cache(new_vals, update=True))
                 for key in new_vals:
                     self._fields[key].determine_inverse(self)
+                self.modified(set(new_vals) - set(old_vals))
                 # check Python constraints for inversed fields
                 self._validate_fields(set(new_vals) - set(old_vals))
+                # recompute new-style fields
+                if self.env.recompute and self._context.get('recompute', True):
+                    self.recompute()
 
         return True
 
@@ -3815,14 +3820,19 @@ class BaseModel(object):
         # create record with old-style fields
         record = self.browse(self._create(old_vals))
 
-        # put the values of pure new-style fields into cache, and inverse them
-        record._cache.update(record._convert_to_cache(new_vals))
         protected_fields = map(self._fields.get, new_vals)
         with self.env.protecting(protected_fields, record):
+            # put the values of pure new-style fields into cache, and inverse them
+            record.modified(set(new_vals) - set(old_vals))
+            record._cache.update(record._convert_to_cache(new_vals))
             for key in new_vals:
                 self._fields[key].determine_inverse(record)
+            record.modified(set(new_vals) - set(old_vals))
             # check Python constraints for inversed fields
             record._validate_fields(set(new_vals) - set(old_vals))
+            # recompute new-style fields
+            if self.env.recompute and self._context.get('recompute', True):
+                self.recompute()
 
         return record
 
@@ -4369,7 +4379,8 @@ class BaseModel(object):
         """
         self.ensure_one()
         vals = self.copy_data(default)[0]
-        new = self.create(vals)
+        # To avoid to create a translation in the lang of the user, copy_translation will do it
+        new = self.with_context(lang=None).create(vals)
         self.copy_translations(new)
         return new
 

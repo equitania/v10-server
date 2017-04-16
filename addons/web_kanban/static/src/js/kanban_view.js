@@ -230,7 +230,7 @@ var KanbanView = View.extend({
 
             // fetch group data (display information)
             var group_ids = _.without(_.map(groups, function (elem) { return elem.attributes.value[0];}), undefined);
-            if (options.grouped_by_m2o && group_ids.length) {
+            if (options.grouped_by_m2o && group_ids.length && group_by_fields_to_read.length) {
                 return new data.DataSet(self, options.relation)
                     .read_ids(group_ids, _.union(['display_name'], group_by_fields_to_read))
                     .then(function(results) {
@@ -307,6 +307,9 @@ var KanbanView = View.extend({
         return this.fields.active;
     },
     _is_quick_create_enabled: function() {
+        if(!_.contains(['char', 'boolean', 'many2one'], this.fields[this.group_by_field].type)){
+            return false;
+        }
         if (!this.quick_creatable || !this.is_action_enabled('create'))
             return false;
         if (this.fields_view.arch.attrs.quick_create !== undefined)
