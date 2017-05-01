@@ -32,6 +32,9 @@ install/win32/meta.py
 /share/
 /src/
 /.settings/
+/local/
+/mx/
+pip-selfcheck.json
 
 # PyCharm
 .idea/
