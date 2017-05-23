@@ -1,5 +1,10 @@
 ## Modul eq_myodoo_backend_theme
 
+### 23.05.2017
+### Version 1.0.8
+#### CHG
+- Kleinere Überschriften
+
 ### 01.12.2016
 ### Version 1.0.7
 #### FIX
