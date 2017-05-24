@@ -1,5 +1,10 @@
 ## Modul eq_myodoo_backend_theme
 
+### 24.05.2017
+### Version 1.0.9
+#### CHG
+- Kleinere Überschriften sowie zusätzlicher Abstand für Kundenmaske (Titel, Vorname, Nachname) wenn Sie in einer Zeile stehen
+
 ### 23.05.2017
 ### Version 1.0.8
 #### CHG

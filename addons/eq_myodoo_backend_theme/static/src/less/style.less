@@ -1,7 +1,7 @@
 // Basics
 // ___________________________________________________________##########################
 
-h1, .h1{font-size: 40px!important;} h2, .h2{font-size: 35px!important;} h3, .h3{font-size: 30px!important;} h4, .h4{font-size: 25px!important;} h5, .h5{font-size: 20px!important;} h6, .h6{font-size: 14px!important;}
+h1, .h1{font-size: 30px!important;} h2, .h2{font-size: 27px!important;} h3, .h3{font-size: 24px!important;} h4, .h4{font-size: 21px!important;} h5, .h5{font-size: 18px!important;} h6, .h6{font-size: 14px!important;}
 
 .o_form_view .o_form_sheet_bg .o_form_sheet { min-width: 97%!important; max-width: 97%!important; }
 
@@ -1562,3 +1562,24 @@ div.o_web_settings_dashboard > div.row > div.o_web_settings_dashboard_col:nth-ch
         }
     }
 }
+
+
+
+// Modulspezifische Anpassungen
+// ___________________________________________________________##########################
+
+// Zusätzlicher Abstand für Titel, Vorname und Name z.B. bei Kundenmaske, im nicht-edit-modus
+div.oe_title {
+	h1 {
+		span, a { margin-right:7px;}
+	}
+}
+/*.o_form_editable {
+	div.oe_title {
+		h1 {
+			.o_form_field {
+				line-height: 20px;
+			}
+		}
+	}
+}*/
