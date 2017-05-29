@@ -1019,7 +1019,7 @@ class AccountInvoice(models.Model):
             :return: dict of value to create() the refund
         """
         values = {}
-        for field in ['name', 'reference', 'comment', 'date_due', 'partner_id', 'company_id',
+        for field in ['name', 'reference', 'comment', 'date_due', 'partner_id', 'company_id', 'team_id',
                 'account_id', 'currency_id', 'payment_term_id', 'user_id', 'fiscal_position_id']:
             if invoice._fields[field].type == 'many2one':
                 values[field] = invoice[field].id
@@ -1353,6 +1353,12 @@ class AccountInvoiceLine(models.Model):
             :rtype line : account.invoice.line record
         """
         pass
+
+    @api.multi
+    def unlink(self):
+        if self.filtered(lambda r: r.invoice_id and r.invoice_id.state != 'draft'):
+            raise UserError(_('You can only delete an invoice line if the invoice is in draft state.'))
+        return super(AccountInvoiceLine, self).unlink()
 
 class AccountInvoiceTax(models.Model):
     _name = "account.invoice.tax"
