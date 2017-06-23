@@ -1,5 +1,11 @@
 ## Modul eq_myodoo_backend_theme
 
+
+### 23.06.2017
+### Version 1.0.10
+#### FIX
+- Auswahl (Checkbox) für alle oder einzelne Zeilen wurde nun gefixt
+
 ### 24.05.2017
 ### Version 1.0.9
 #### CHG
