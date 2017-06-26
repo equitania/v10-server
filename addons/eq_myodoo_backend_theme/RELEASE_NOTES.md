@@ -1,5 +1,9 @@
 ## Modul eq_myodoo_backend_theme
 
+### 26.06.2017
+### Version 1.0.11
+#### FIX
+- Löschen (Button: Papierkorb) in Auftragszeilen gefixt
 
 ### 23.06.2017
 ### Version 1.0.10

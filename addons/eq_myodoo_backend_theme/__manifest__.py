@@ -23,7 +23,7 @@
     # Theme information
     'name' : 'MyOdoo Backend Theme v10',
     'category' : 'Website',
-    'version' : '1.0.10',
+    'version' : '1.0.11',
     'license': 'AGPL-3',
     'summary': 'Backend, Theme',
     'description': """

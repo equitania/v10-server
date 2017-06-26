@@ -23,7 +23,7 @@
             t-att-data-string="column.string"
             ><t t-raw="render_cell(record, column)"/></td>
     </t>
-    <td t-if="options.deletable" class='oe_list_record_delete' width="13px">
+    <td t-if="options.deletable" class='o_list_record_delete' width="13px">
         <span name="delete" class="fa fa-trash-o"/>
     </td>
 </tr>
