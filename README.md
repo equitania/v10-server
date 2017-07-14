@@ -46,5 +46,5 @@ Zur Installation des Servers:
 	https://github.com/equitania/odoo-addons/blob/8.0/scripts/install-odoo-server-debian8.sh
 
 
-Weitere Informationen unter <a href="https://www.myoodoo.de">Myodoo.de</a>
+Weitere Informationen unter <a href="https://www.myodoo.de">Myodoo.de</a>
 oder <a href="https://leanpub.com/odoo-kochbuch">Das Odoo Kochbuch</a>
