@@ -45,4 +45,8 @@ pip-selfcheck.json
 .pydevproject
 .settings/
 
+# odoo
 .mailmap
+
+# mac
+.DS_Store
