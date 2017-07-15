@@ -38,3 +38,11 @@ pip-selfcheck.json
 
 # PyCharm
 .idea/
+.idea
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+
+.mailmap
