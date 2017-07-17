@@ -161,7 +161,5 @@
         <!-- Action for website links click-->
 
 
-
-        <menuitem id="menu_url_shortener_main" name="Link Tracker" parent="utm.menu_link_tracker_root" action="action_link_tracker" groups="base.group_no_one" web_icon="link_tracker,static/description/icon.png"/>
     </data>
 </odoo>

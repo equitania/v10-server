@@ -5,7 +5,7 @@
 Enable UTM trackers in shared links.
 =====================================================
         """,
-    'version': '1.0',
+    'version': '1.0.1',
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
