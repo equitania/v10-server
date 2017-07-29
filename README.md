@@ -17,9 +17,9 @@ Unsere **deutschen Sprachübersetzungen unterscheiden** sich in Details von den 
 
 Unser Fork wird regelmäßig mit dem Hauptodoo Fork abgeglichen.
 
-`Aktuelle Buildversion: 170301`
+`Aktuelle Buildversion: 170701`
 
-`Letzer Abgleich: 03.03.2017`
+`Letzer Abgleich: 29.07.2017`
 
 Dieser Fork obliegt der <a href="http://www.gnu.org/licenses/licenses.html">GNU Affero General Public License</a> wie das Ursprungssystem <a href="https://www.odoo.com">Odoo</a> selbst.
 
@@ -33,18 +33,8 @@ Dieser Fork obliegt der <a href="http://www.gnu.org/licenses/licenses.html">GNU 
 
 Mit MyOdoo starten 
 -------------------------
-Für eine Installation .
+Für eine Installation können Sie im Odoo Kochbuch den Einstieg nachlesen.
 
-Dazu haben wir einige Installationsskripte vorbereitet.
-
-Vorbereitung von Debian 8 oder Ubuntu:
-
-	https://github.com/equitania/odoo-addons/blob/8.0/scripts/prepare-odoo-server-debian8.sh
-
-Zur Installation des Servers:
-
-	https://github.com/equitania/odoo-addons/blob/8.0/scripts/install-odoo-server-debian8.sh
-
+	https://leanpub.com/odoo-kochbuch/read_sample
 
 Weitere Informationen unter <a href="https://www.myodoo.de">Myodoo.de</a>
-oder <a href="https://leanpub.com/odoo-kochbuch">Das Odoo Kochbuch</a>
