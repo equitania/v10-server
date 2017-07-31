@@ -17,11 +17,11 @@ Unsere **deutschen Sprachübersetzungen unterscheiden** sich in Details von den 
 
 Unser Fork wird regelmäßig mit dem Hauptodoo Fork abgeglichen.
 
-`Aktuelle Buildversion: 170701`
+`Aktuelle Buildversion: 170731`
 
-`Letzer Abgleich: 29.07.2017`
+`Letzer Abgleich: 31.07.2017`
 
-Dieser Fork obliegt der <a href="http://www.gnu.org/licenses/licenses.html">GNU Affero General Public License</a> wie das Ursprungssystem <a href="https://www.odoo.com">Odoo</a> selbst.
+Dieser Fork obliegt der <a href="https://de.wikipedia.org/wiki/GNU_Lesser_General_Public_License">GNU LESSER GENERAL PUBLIC LICENSE</a> wie das Ursprungssystem <a href="https://www.odoo.com">Odoo</a> selbst.
 
 ## Gute Gründe den MyOdoo Fork einzusetzen
 
@@ -35,6 +35,6 @@ Mit MyOdoo starten
 -------------------------
 Für eine Installation können Sie im Odoo Kochbuch den Einstieg nachlesen.
 
-	https://leanpub.com/odoo-kochbuch/read_sample
+	<a href="https://leanpub.com/odoo-kochbuch/read_sample">Leseprobe</a>
 
 Weitere Informationen unter <a href="https://www.myodoo.de">Myodoo.de</a>
