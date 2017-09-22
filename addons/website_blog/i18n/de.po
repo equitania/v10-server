@@ -733,7 +733,7 @@ msgstr "Rangliste"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_post_complete_read_next
 msgid "Read Next <span class=\"fa fa-long-arrow-right\"/>"
-msgstr "Weiterlesen <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
 
 #. module: website_blog
 #: model:blog.post,content:website_blog.blog_post_1
@@ -789,7 +789,7 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:52
 #, python-format
 msgid "Start writing here..."
-msgstr "Hier schreiben..."
+msgstr ""
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_status
@@ -799,7 +799,7 @@ msgstr "Status"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "Stay updated :"
-msgstr "Bleib informiert"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post_subtitle
@@ -964,7 +964,7 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:20
 #, python-format
 msgid "Write a title, the subtitle is optional."
-msgstr "Title einfügen, der Subtitel ist optional"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.website_blog
@@ -1014,7 +1014,7 @@ msgstr "nach rechts verschieben"
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "unpublished"
-msgstr "unveröffentlicht"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -1029,4 +1029,4 @@ msgstr "Ansichten"
 #. module: website_blog
 #: model:blog.tag,name:website_blog.blog_tag_2
 msgid "website"
-msgstr "Website"
+msgstr ""
