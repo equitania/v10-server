@@ -34,7 +34,6 @@ Dieser Fork obliegt der <a href="https://de.wikipedia.org/wiki/GNU_Lesser_Genera
 Mit MyOdoo starten 
 -------------------------
 Für eine Installation können Sie im Odoo Kochbuch den Einstieg nachlesen.
+[Odoo Kochbuch](https://leanpub.com/odoo-kochbuch/read_sample)
 
-	<a href="https://leanpub.com/odoo-kochbuch/read_sample">Leseprobe</a>
-
-Weitere Informationen unter <a href="https://www.myodoo.de">Myodoo.de</a>
+Weitere Informationen unter [Myodoo.de](https://www.myodoo.de) und im [Wiki](https://equitania.atlassian.net/wiki/spaces/MW/overview).
