@@ -980,6 +980,9 @@ var ProductScreenWidget = ScreenWidget.extend({
             this.product_categories_widget.reset_category();
             this.numpad.state.reset();
         }
+        if (this.pos.config.iface_vkeyboard && this.chrome.widget.keyboard) {
+            this.chrome.widget.keyboard.connect($(this.el.querySelector('.searchbox input')));
+        }
     },
 
     close: function(){
@@ -1125,12 +1128,15 @@ var ClientListScreenWidget = ScreenWidget.extend({
         var self = this;
         var order = this.pos.get_order();
         if( this.has_client_changed() ){
-            if ( this.new_client ) {
+            var default_fiscal_position_id = _.find(this.pos.fiscal_positions, function(fp) {
+                return fp.id === self.pos.config.default_fiscal_position_id[0];
+            });
+            if ( this.new_client && this.new_client.property_account_position_id ) {
                 order.fiscal_position = _.find(this.pos.fiscal_positions, function (fp) {
                     return fp.id === self.new_client.property_account_position_id[0];
-                });
+                }) || default_fiscal_position_id;
             } else {
-                order.fiscal_position = undefined;
+                order.fiscal_position = default_fiscal_position_id;
             }
 
             order.set_client(this.new_client);
@@ -1323,6 +1329,7 @@ var ClientListScreenWidget = ScreenWidget.extend({
     //             to maintain consistent scroll.
     display_client_details: function(visibility,partner,clickpos){
         var self = this;
+        var searchbox = this.$('.searchbox input');
         var contents = this.$('.client-details-contents');
         var parent   = this.$('.client-list').parent();
         var scroll   = parent.scrollTop();
@@ -1359,6 +1366,19 @@ var ClientListScreenWidget = ScreenWidget.extend({
             this.details_visible = true;
             this.toggle_save_button();
         } else if (visibility === 'edit') {
+            // Connect the keyboard to the edited field
+            if (this.pos.config.iface_vkeyboard && this.chrome.widget.keyboard) {
+                contents.off('click', '.detail');
+                searchbox.off('click');
+                contents.on('click', '.detail', function(ev){
+                    self.chrome.widget.keyboard.connect(ev.target);
+                    self.chrome.widget.keyboard.show();
+                });
+                searchbox.on('click', function() {
+                    self.chrome.widget.keyboard.connect($(this));
+                });
+            }
+
             this.editing_client = true;
             contents.empty();
             contents.append($(QWeb.render('ClientDetailsEdit',{widget:this,partner:partner})));
@@ -1401,6 +1421,9 @@ var ClientListScreenWidget = ScreenWidget.extend({
     },
     close: function(){
         this._super();
+        if (this.pos.config.iface_vkeyboard && this.chrome.widget.keyboard) {
+            this.chrome.widget.keyboard.hide();
+        }
     },
 });
 gui.define_screen({name:'clientlist', widget: ClientListScreenWidget});
