@@ -1,11 +1,11 @@
 # Der MyOdoo Fork von Open Source ERP System Odoo Version 10
 ----
 *Powered by*
-*Equitania Software GmbH* 
-*Weiherstrassse 13* 
-*75173 Pforzheim* 
-*Germany - Deutschland* 
-*www.myodoo.de / www.equitania.de* 
+*Equitania Software GmbH*
+*Weiherstrassse 13*
+*75173 Pforzheim*
+*Germany - Deutschland*
+*www.myodoo.de / www.equitania.de*
 
 ----
 
@@ -17,9 +17,9 @@ Unsere **deutschen Sprachübersetzungen unterscheiden** sich in Details von den 
 
 Unser Fork wird regelmäßig mit dem Hauptodoo Fork abgeglichen.
 
-`Aktuelle Buildversion: 171210`
+`Aktuelle Buildversion: 171217`
 
-`Letzer Abgleich: 10.12.2017`
+`Letzer Abgleich: 17.12.2017`
 
 Dieser Fork obliegt der <a href="https://de.wikipedia.org/wiki/GNU_Lesser_General_Public_License">GNU LESSER GENERAL PUBLIC LICENSE</a> wie das Ursprungssystem <a href="https://www.odoo.com">Odoo</a> selbst.
 
@@ -27,11 +27,11 @@ Dieser Fork obliegt der <a href="https://de.wikipedia.org/wiki/GNU_Lesser_Genera
 
 - Der MyOdoo Fork ist optimiert für den deutschsprachigen Raum (D-A-CH), d.h. verbesserte Übersetzungen und geringere Größe
 - Der MyOdoo Fork wird von einem deutschsprachigen Unternehmen betreut.
-- Der MyOdoo Fork beinhaltet einige Verbesserungen und Bugfixes, die im Odoo Haupt Branch fehlen. Dennoch wird der Fork wöchentlich abgeglichen. 
+- Der MyOdoo Fork beinhaltet einige Verbesserungen und Bugfixes, die im Odoo Haupt Branch fehlen. Dennoch wird der Fork wöchentlich abgeglichen.
 - Der MyOdoo Fork wird über einen Release Manager verwaltet und ist bei vielen deutschen Unternehmen im Einsatz.
 
 
-Mit MyOdoo starten 
+Mit MyOdoo starten
 -------------------------
 Für eine Installation können Sie im Odoo Kochbuch den Einstieg nachlesen.
 [Odoo Kochbuch](https://leanpub.com/odoo-kochbuch/read_sample)
