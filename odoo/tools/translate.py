@@ -36,6 +36,7 @@ SKIPPED_ELEMENTS = ('script', 'style', 'title')
 _LOCALE2WIN32 = {
     'de_DE': 'German_Germany',
     'fr_FR': 'French_France',
+    'es_ES': 'Spanish_Spain',
 }
 
 # These are not all english small words, just those that could potentially be isolated within views
@@ -824,7 +825,7 @@ def trans_generate(lang, modules, cr):
             constraints = getattr(cls, '_local_' + cons_type, [])
             for constraint in constraints:
                 push_constraint_msg(module, term_type, model._name, constraint[msg_pos])
-            
+
     cr.execute(query_models, query_param)
 
     for (_, model, module) in cr.fetchall():

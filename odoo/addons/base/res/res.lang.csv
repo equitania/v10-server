@@ -5,3 +5,4 @@
 "base.lang_en_GB","English (UK)","en_GB","en_GB","Left-to-Right","[3,0]",".",",","%d/%m/%Y","%H:%M:%S","True"
 "base.lang_fr","French / Français","fr_FR","fr","Left-to-Right","[3,0]",","," ","%d/%m/%Y","%H:%M:%S","True"
 "base.lang_fr_CH","French (CH) / Français (CH)","fr_CH","fr_CH","Left-to-Right","[3,0]",".","'","%d. %m. %Y","%H:%M:%S","True"
+"base.lang_es","Spanish / Español","es_ES","es","Left-to-Right","[3,0]",",",".","%d/%m/%Y","%H:%M:%S","True"
