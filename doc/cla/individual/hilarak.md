@@ -1,4 +1,4 @@
-Colombia, 2015-12-23
+India, 18-02-2018
 
 I hereby agree to the terms of the Odoo Individual Contributor License
 Agreement v1.0.
@@ -8,5 +8,4 @@ declaration.
 
 Signed,
 
-Juan Pablo Arias jpa@devco.co https://github.com/kurkop
-Juan Pablo Arias j@kurlabs.com https://github.com/kurkop
+Hilar AK hilarak@gmail.com https://github.com/hilarak
