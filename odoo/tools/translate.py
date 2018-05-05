@@ -54,7 +54,7 @@ _LOCALE2WIN32 = {
     #'fi_FI': 'Finnish_Finland',
     'fr_FR': 'French_France',
     #'fr_BE': 'French_France',
-    'fr_CH': 'French_France',
+    #'fr_CH': 'French_France',
     #'fr_CA': 'French_France',
     #'ga': 'Scottish Gaelic',
     #'gl_ES': 'Galician_Spain',
@@ -905,7 +905,7 @@ def trans_generate(lang, modules, cr):
             constraints = getattr(cls, '_local_' + cons_type, [])
             for constraint in constraints:
                 push_constraint_msg(module, term_type, model._name, constraint[msg_pos])
-            
+
     cr.execute(query_models, query_param)
 
     for (_, model, module) in cr.fetchall():

@@ -1,8 +1,5 @@
 "id","name","code","iso_code","direction","grouping","decimal_point","thousands_sep","date_format","time_format","translatable"
 "base.lang_de","German / Deutsch","de_DE","de","Left-to-Right","[3,0]",",",".","%d.%m.%Y","%H:%M:%S","True"
-"base.lang_de_CH","German (CH) / Deutsch (CH)",de_CH,de_CH,"Left-to-Right","[3,3]",".","'","%d.%m.%Y","%H:%M:%S",True
 "base.lang_en","English","en_US","en","Left-to-Right","[3,0]",".",",","%m/%d/%Y","%H:%M:%S","True"
-"base.lang_en_GB","English (UK)","en_GB","en_GB","Left-to-Right","[3,0]",".",",","%d/%m/%Y","%H:%M:%S","True"
 "base.lang_fr","French / Français","fr_FR","fr","Left-to-Right","[3,0]",","," ","%d/%m/%Y","%H:%M:%S","True"
-"base.lang_fr_CH","French (CH) / Français (CH)","fr_CH","fr_CH","Left-to-Right","[3,0]",".","'","%d. %m. %Y","%H:%M:%S","True"
 "base.lang_es","Spanish / Español","es_ES","es","Left-to-Right","[3,0]",",",".","%d/%m/%Y","%H:%M:%S","True"
