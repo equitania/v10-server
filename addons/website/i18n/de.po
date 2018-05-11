@@ -2499,7 +2499,7 @@ msgstr "Namecheap"
 #. module: website
 #: model:ir.ui.view,arch_db:website.view_website_config_settings
 msgid "New Language"
-msgstr ""
+msgstr "Neue Sprache"
 
 #. module: website
 #. openerp-web
