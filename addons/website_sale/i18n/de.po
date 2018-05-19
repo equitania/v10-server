@@ -1847,7 +1847,7 @@ msgstr "Ein Bild pro Produkt"
 #. module: website_sale
 #: selection:website.config.settings,module_website_sale_options:0
 msgid "One-step \"add to cart\""
-msgstr "Ein Schritt \"In den Warenkorb\""
+msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -2047,7 +2047,7 @@ msgstr "Preise &amp; Rabatte"
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_website_config_settings_sale_pricelist_setting_split_1
 msgid "Pricing Strategy"
-msgstr "Preisstrategie"
+msgstr ""
 
 #. module: website_sale
 #: model:product.public.category,name:website_sale.printer
@@ -2416,14 +2416,14 @@ msgstr ""
 #. module: website_sale
 #: selection:website.config.settings,group_website_multiimage:0
 msgid "Several images per product"
-msgstr "Mehrere Bilder pro Artikel"
+msgstr ""
 
 #. module: website_sale
 #: selection:website.config.settings,sale_pricelist_setting_split_1:0
 msgid ""
 "Several prices selectable through a drop-down list or applied automatically "
 "via Geo-IP"
-msgstr "Mehrere Preise über eine Dropdown-Liste wählbar oder automatisch über Geo-IP anwendbar"
+msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.bill_to
@@ -2649,7 +2649,7 @@ msgstr ""
 msgid ""
 "Suggest optional products when adding to cart (e.g. for a computer: "
 "warranty, software, etc.)"
-msgstr "Alternativen im Warenkorb vorschlagen. (z.B. für Computer: Garantie, Software, etc.)"
+msgstr ""
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
