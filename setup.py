@@ -36,9 +36,11 @@ def py2exe_datafiles():
 
     import docutils
     import passlib
+    import reportlab
     import requests
     data_mapping = ((docutils, 'docutils'),
                     (passlib, 'passlib'),
+                    (reportlab, 'reportlab'),
                     (requests, 'requests'))
 
     for mod, datadir in data_mapping:
@@ -68,6 +70,7 @@ def py2exe_options():
                     'dist_dir': 'dist',
                     'packages': [
                         'asynchat', 'asyncore',
+                        'BeautifulSoup',
                         'commands',
                         'dateutil',
                         'decimal',

@@ -67,7 +67,7 @@ _LOCALE2WIN32 = {
     #'hu': 'Hungarian_Hungary',
     #'is_IS': 'Icelandic_Iceland',
     #'id_ID': 'Indonesian_indonesia',
-    #'it_IT': 'Italian_Italy',
+    'it_IT': 'Italian_Italy',
     #'ja_JP': 'Japanese_Japan',
     #'kn_IN': 'Kannada',
     #'km_KH': 'Khmer',
