@@ -3,6 +3,7 @@
 
 {
     'name': 'Report',
+    'version': '1.0.180805',
     'category': 'Base',
     'summary': 'Hidden',
     'description': """

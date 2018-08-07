@@ -6,7 +6,7 @@
     'description': 'Default website theme to showcase customization possibilities.',
     'category': 'Theme/Hidden',
     'sequence': 1000,
-    'version': '1.0',
+    'version': '1.0.180805',
     'depends': ['website'],
     'data': [
         'data/theme_default_data.xml',

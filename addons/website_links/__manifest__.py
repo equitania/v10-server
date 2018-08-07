@@ -6,7 +6,7 @@ Website interface to create short and trackable URLs.
 =====================================================
 
         """,
-    'version': '1.0',
+    'version': '1.0.180805',
     'depends': ['website', 'link_tracker'],
     'data': [
         'views/website_links_template.xml',

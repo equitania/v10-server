@@ -3,7 +3,7 @@
 
 {
     'name': 'Margins in Sales Orders',
-    'version':'1.0',
+    'version': '1.0.180805',
     'category': 'Sales',
     'description': """
 This module adds the 'Margin' on sales order.

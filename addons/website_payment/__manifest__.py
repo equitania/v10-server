@@ -4,7 +4,7 @@
     'name': 'Payment: Website Integration',
     'category': 'Website',
     'summary': 'Payment: Website Integration',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """Bridge module for acquirers and website.""",
     'depends': [
         'website',

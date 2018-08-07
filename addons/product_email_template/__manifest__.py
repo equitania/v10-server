@@ -2,6 +2,7 @@
 
 {
     'name': 'Product Email Template',
+    'version': '1.0.180805',
     'depends': ['account'],
     'category': 'Accounting',
     'description': """

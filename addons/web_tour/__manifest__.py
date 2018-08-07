@@ -9,7 +9,7 @@ Odoo Web tours.
 ========================
 
 """,
-    'version': '0.1',
+    'version': '1.0.180805',
     'depends': ['web'],
     'data': [
         'security/ir.model.access.csv',
@@ -19,5 +19,5 @@ Odoo Web tours.
     'qweb': [
         "static/src/xml/*.xml",
     ],
-    'auto_install': True
+    'auto_install': False
 }

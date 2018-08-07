@@ -10,7 +10,7 @@ Odoo Web Calendar view.
 
 """,
     'author': 'Odoo SA, Valentino Lab (Kalysto)',
-    'version': '2.0',
+    'version': '2.0.180805',
     'depends': ['web'],
     'data' : [
         'views/web_calendar_templates.xml',

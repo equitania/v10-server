@@ -3,7 +3,7 @@
 
 {
     'name': 'Cancel Journal Entries',
-    'version': '1.1',
+    'version': '1.1.180805',
     'category': 'Accounting',
     'description': """
 Allows canceling accounting entries.

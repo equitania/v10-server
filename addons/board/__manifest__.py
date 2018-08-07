@@ -3,7 +3,7 @@
 
 {
     'name': 'Dashboards',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Extra Tools',
     'summary': 'Create your custom dashboard',
     'description': """

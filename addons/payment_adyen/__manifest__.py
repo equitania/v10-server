@@ -4,7 +4,7 @@
     'name': 'Adyen Payment Acquirer',
     'category': 'Accounting',
     'summary': 'Payment Acquirer: Adyen Implementation',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """Adyen Payment Acquirer""",
     'depends': ['payment'],
     'data': [

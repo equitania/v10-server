@@ -9,7 +9,7 @@ Odoo Web kanban view.
 ========================
 
 """,
-    'version': '2.0',
+    'version': '2.0.180805',
     'depends': ['web'],
     'data' : [
         'views/web_kanban_templates.xml',

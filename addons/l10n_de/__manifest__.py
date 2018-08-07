@@ -3,6 +3,7 @@
 
 {
     'name': 'Deutschland - Accounting',
+    'version': '1.0.180805',
     'author': 'openbig.org',
     'website': 'http://www.openbig.org',
     'category': 'Localization',

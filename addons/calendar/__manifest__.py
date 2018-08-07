@@ -3,7 +3,7 @@
 
 {
     'name': 'Calendar',
-    'version': '1.0',
+    'version': '1.0.180805',
     'sequence': 130,
     'depends': ['base', 'mail', 'base_action_rule', 'web_calendar'],
     'summary': 'Personal & Shared Calendar',

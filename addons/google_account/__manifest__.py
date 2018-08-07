@@ -3,6 +3,7 @@
 
 {
     'name': 'Google Users',
+    'version': '1.0.180805',
     'category': 'Extra Tools',
     'description': """
 The module adds google user in res user.

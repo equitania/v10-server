@@ -3,7 +3,7 @@
 
 {
     'name': 'Check Printing Base',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Accounting',
     'summary': 'Check printing commons',
     'description': """

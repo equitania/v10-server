@@ -4,7 +4,7 @@
 
 {
     'name': 'Portal Stock',
-    'version': '0.1',
+    'version': '1.0.180805',
     'category': 'Warehouse',
     'complexity': 'easy',
     'description': """

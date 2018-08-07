@@ -3,7 +3,7 @@
 
 {
     'name': 'Password Encryption',
-    'version': '2.0',
+    'version': '2.0.180805',
     'author': ['Odoo SA', 'FS3'],
     'maintainer': 'Odoo SA',
     'category': 'Extra Tools',

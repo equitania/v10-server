@@ -3,7 +3,7 @@
 
 {
     'name': 'Marketing Campaigns',
-    'version': '1.1',
+    'version': '1.1.180805',
     'depends': ['document', 'mail', 'decimal_precision'],
     'category': 'Marketing',
     'description': """

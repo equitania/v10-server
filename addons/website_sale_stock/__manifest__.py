@@ -3,6 +3,7 @@
 
 {
     'name': 'Website Sale Stock - Website Delivery Information',
+    'version': '1.0.180805',
     'category': 'Website',
     'description': """
     Display delivery orders (picking) infos on the website

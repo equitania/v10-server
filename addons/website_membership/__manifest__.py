@@ -6,7 +6,7 @@
     'summary': 'Online Directory of Members',
     'category': 'Website',
     'summary': 'Publish Associations, Groups and Memberships',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """
 Website for browsing Associations, Groups and Memberships
 =========================================================

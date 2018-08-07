@@ -3,7 +3,7 @@
 {
     'name': 'Lunch',
     'sequence': 120,
-    'version': '1.0',
+    'version': '1.0.180805',
     'depends': ['base', 'web', 'decimal_precision'],
     'category': 'Human Resources',
     'summary': 'Lunch Order, Meal, Food',

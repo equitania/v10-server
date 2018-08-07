@@ -4,7 +4,7 @@
     'name': 'Authorize.Net Payment Acquirer',
     'category': 'Accounting',
     'summary': 'Payment Acquirer: Authorize.net Implementation',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """Authorize.Net Payment Acquirer""",
     'depends': ['payment'],
     'data': [

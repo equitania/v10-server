@@ -5,7 +5,7 @@
 
 {
     'name': 'France - Accounting',
-    'version': '1.2',
+    'version': '1.2.180805',
     'category': 'Localization',
     'description': """
 This is the module to manage the accounting chart for France in Odoo.

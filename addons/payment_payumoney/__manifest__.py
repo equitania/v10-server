@@ -3,6 +3,7 @@
 
 {
     'name': 'PayuMoney Payment Acquirer',
+    'version': '1.0.180805',
     'category': 'Payment Acquirer',
     'summary': 'Payment Acquirer: PayuMoney Implementation',
     'description': """

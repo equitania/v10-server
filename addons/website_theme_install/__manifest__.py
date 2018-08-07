@@ -2,7 +2,7 @@
     'name': 'Website Theme Install',
     'description': "Propose to install a theme on website installation",
     'category': 'Website',
-    'version': '1.0',
+    'version': '1.0.180805',
     'data': [
         'views/assets.xml',
         'views/views.xml',

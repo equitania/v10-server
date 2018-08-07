@@ -2,6 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Timesheet in Website Portal',
+    'version': '0.1.180805',
     'category': 'Website',
     'description': """
 Display Timesheet on Task in the Website Portal

@@ -3,7 +3,7 @@
 
 {
     'name': 'Resource',
-    'version': '1.1',
+    'version': '1.1.180805',
     'category': 'Hidden',
     'description': """
 Module for resource management.

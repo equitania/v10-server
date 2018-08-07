@@ -7,7 +7,7 @@
 Configure the price accuracy you need for different kinds of usage: accounting, sales, purchases.
 =================================================================================================
 """,
-    'version': '0.1',
+    'version': '0.1.180805',
     'depends': ['base'],
     'category' : 'Hidden',
     'data': [

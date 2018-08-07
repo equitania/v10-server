@@ -5,7 +5,7 @@
     'name': 'Issues Form',
     'category': 'Project',
     'summary': 'Create Issues From Contact Form',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """
 Odoo Contact Form
 ====================

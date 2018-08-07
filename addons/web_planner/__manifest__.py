@@ -5,7 +5,7 @@
     'name': 'Planner',
     'category': 'Extra Tools',
     'summary': 'Help to configure application',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """Application Planner""",
     'depends': ['web'],
     'data': [

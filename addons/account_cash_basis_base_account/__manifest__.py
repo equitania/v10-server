@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name' : 'Tax Cash Basis Edit Base Account',
-    'version' : '1.0',
+    'version' : '1.0.180805',
     'summary': 'Add a custom account to handle base amount lines',
     'sequence': 5,
     'description': """

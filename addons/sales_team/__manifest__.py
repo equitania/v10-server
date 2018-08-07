@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Sales Teams',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Sales',
     'summary': 'Sales Team',
     'description': """

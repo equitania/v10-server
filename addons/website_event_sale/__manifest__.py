@@ -2,6 +2,7 @@
 
 {
     'name': "Online Event's Tickets",
+    'version': '1.0.180805',
     'category': 'Marketing',
     'summary': "Sell Your Event's Tickets",
     'website': 'https://www.odoo.com/page/events',

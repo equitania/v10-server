@@ -3,7 +3,7 @@
 
 {
     'name': 'Employee Directory',
-    'version': '1.1',
+    'version': '1.1.180805',
     'category': 'Human Resources',
     'sequence': 75,
     'summary': 'Jobs, Departments, Employees Details',

@@ -3,7 +3,7 @@
 
 {
     'name': 'Mercury Payment Services',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Point of Sale',
     'sequence': 6,
     'summary': 'Credit card support for Point Of Sale',

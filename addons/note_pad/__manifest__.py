@@ -3,7 +3,7 @@
 
 {
     'name': 'Memos pad',
-    'version': '0.1',
+    'version': '1.0.180805',
     'category': 'Productivity',
     'description': """
 This module update memos inside Odoo for using an external pad

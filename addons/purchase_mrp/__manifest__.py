@@ -4,7 +4,7 @@
 
 {
     'name': 'Purchase and MRP Management',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Hidden',
     'description': """
 This module provides facility to the user to install mrp and purchase modules at a time.

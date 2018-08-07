@@ -4,7 +4,7 @@
     'name': 'Buckaroo Payment Acquirer',
     'category': 'Accounting',
     'summary': 'Payment Acquirer: Buckaroo Implementation',
-    'version': '1.0',
+    'version': '1.0.180805',
     'description': """Buckaroo Payment Acquirer""",
     'depends': ['payment'],
     'data': [

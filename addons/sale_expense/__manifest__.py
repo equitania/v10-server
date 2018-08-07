@@ -3,7 +3,7 @@
 
 {
     'name': 'Sales Expense',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Sales',
     'summary': 'Quotation, Sale Orders, Delivery & Invoicing Control',
     'description': """

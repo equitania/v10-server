@@ -3,7 +3,7 @@
 
 {
     "name" : "Product extension to track sales and purchases",
-    "version" : "1.0",
+    'version': '1.0.180805',
     "depends" : ["mrp", "stock_account"],
     "category" : "Manufacturing",
     "description": """

@@ -1,6 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name' : 'Products Expiration Date',
+    'version': '1.0.180805',
     'category' : 'Warehouse',
     'depends' : ['stock'],
     'demo' : ['data/product_expiry_demo.xml'],

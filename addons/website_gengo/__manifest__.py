@@ -3,6 +3,7 @@
 
 {
     'name': 'Website Gengo Translator',
+    'version': '1.0.180805',
     'category': 'Website',
     'description': """
 Website Gengo Translator

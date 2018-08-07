@@ -4,7 +4,7 @@
 
 {
     'name': 'Point of Sale Common Data Drinks',
-    'version': '1.0',
+    'version': '1.0.180805',
     'category': 'Point of Sale',
     'sequence': 99,
     'summary': 'Common Drinks data for points of sale',

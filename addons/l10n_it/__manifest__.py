@@ -3,7 +3,7 @@
 
 {
     'name': 'Italy - Accounting',
-    'version': '0.2',
+    'version': '1.0.180805',
     'depends': ['base_vat','base_iban'],
     'author': 'OpenERP Italian Community',
     'description': """

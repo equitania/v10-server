@@ -3,6 +3,7 @@
 
 {
     'name': 'Sale Service Rating',
+    'version': '1.0.180805',
     'category': 'Hidden',
     'description': """
 This module allows a customer to give rating on task which are created from sale order.

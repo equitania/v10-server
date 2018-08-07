@@ -3,7 +3,7 @@
 
 {
     'name': 'Purchase Management',
-    'version': '1.2',
+    'version': '1.2.180805',
     'category': 'Purchases',
     'sequence': 60,
     'summary': 'Purchase Orders, Receipts, Vendor Bills',

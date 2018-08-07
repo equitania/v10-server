@@ -4,7 +4,7 @@
 
 {
     'name': 'Portal Sale',
-    'version': '0.1',
+    'version': '1.0.180805',
     'category': 'Sales',
     'complexity': 'easy',
     'description': """
