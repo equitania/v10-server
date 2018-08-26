@@ -4,7 +4,7 @@
 
 {
     'name': 'Delivery Costs',
-    'version': '1.0.180805',
+    'version': '1.0.180826',
     'category': 'Stock',
     'description': """
 Allows you to add delivery methods in sale orders and picking.

@@ -4,7 +4,7 @@
     'name': 'Payment Acquirer',
     'category': 'Accounting',
     'summary': 'Payment Acquirer Base Module',
-    'version': '1.0.180805',
+    'version': '1.0.180826',
     'description': """Payment Acquirer Base Module""",
     'depends': ['account'],
     'data': [
