@@ -3,7 +3,7 @@
 
 {
     'name': 'Point of Sale',
-    'version': '1.0.180826',
+    'version': '1.0.180922',
     'category': 'Point Of Sale',
     'sequence': 20,
     'summary': 'Touchscreen Interface for Shops',

@@ -4,7 +4,7 @@
 
 {
     'name': 'Timesheets / Attendances',
-    'version': '1.1.180805',
+    'version': '1.1.180922',
     'category': 'Human Resources',
     'sequence': 80,
     'summary': 'Timesheets, Activities',

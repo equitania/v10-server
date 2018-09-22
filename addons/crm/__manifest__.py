@@ -3,7 +3,7 @@
 
 {
     'name': 'CRM',
-    'version': '1.0.180826',
+    'version': '1.0.180922',
     'category': 'Sales',
     'sequence': 5,
     'summary': 'Leads, Opportunities, Activities',

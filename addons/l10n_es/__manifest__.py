@@ -10,7 +10,7 @@
 
 {
     "name" : "Spain - Accounting (PGCE 2008)",
-    "version" : "4.0.180805",
+    "version" : "4.0.180922",
     "author" : "Spanish Localization Team",
     'website' : 'https://launchpad.net/openerp-spain',
     'category': 'Localization',
