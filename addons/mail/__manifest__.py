@@ -2,7 +2,7 @@
 
 {
     'name': 'Discuss',
-    'version': '1.0.180922',
+    'version': '1.0.181021',
     'category': 'Discuss',
     'sequence': 25,
     'summary': 'Discussions, Mailing Lists, News',

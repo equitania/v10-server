@@ -2,7 +2,7 @@
 
 {
     'name': 'Equipments',
-    'version': '1.0.180805',
+    'version': '1.0.181021',
     'sequence': 125,
     'category': 'Human Resources',
     'description': """
