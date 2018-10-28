@@ -3,7 +3,7 @@
 
 {
     'name': 'Survey',
-    'version': '2.0.180805',
+    'version': '2.0.181028',
     'category': 'Marketing',
     'description': """
 Create beautiful web surveys and visualize answers

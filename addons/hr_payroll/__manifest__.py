@@ -3,7 +3,7 @@
 
 {
     'name': 'Payroll',
-    'version': '1.0.180805',
+    'version': '1.0.181028',
     'category': 'Human Resources',
     'sequence': 38,
     'description': """

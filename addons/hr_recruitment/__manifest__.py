@@ -3,7 +3,7 @@
 
 {
     'name': 'Recruitment Process',
-    'version': '1.0.180922',
+    'version': '1.0.181028',
     'category': 'Human Resources',
     'sequence': 90,
     'summary': 'Jobs, Recruitment, Applications, Job Interviews',

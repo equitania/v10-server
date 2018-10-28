@@ -6,7 +6,7 @@
     'category': 'Website',
     'sequence': 150,
     'summary': 'Forum, FAQ, Q&A',
-    'version': '1.0.180902',
+    'version': '1.0.180181028902',
     'description': """
 Ask questions, get answers, no distractions
         """,

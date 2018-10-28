@@ -1,6 +1,6 @@
 {
     'name': 'Base import',
-    'version': '1.0.180826',
+    'version': '1.0.181028',
     'description': """
 New extensible file import for Odoo
 ======================================

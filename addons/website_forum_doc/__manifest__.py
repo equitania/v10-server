@@ -3,7 +3,7 @@
 
 {
     'name': 'Documentation',
-    'version': '1.0.180805',
+    'version': '1.0.181028',
     'category': 'Website',
     'summary': 'Forum, Documentation',
     'description': """

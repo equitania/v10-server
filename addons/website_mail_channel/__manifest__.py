@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Mailing List Archive',
-    'version': '0.1.180826',
+    'version': '0.1.181028',
     'category': 'Website',
     'description': """
 Odoo Mail Group : Mailing List Archives

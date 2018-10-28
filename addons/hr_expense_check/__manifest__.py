@@ -6,7 +6,7 @@
     'description': """
         Print amount in words on checks issued for expenses
     """,
-    'version': '1.0.180805',
+    'version': '1.0.181028',
     'depends': ['account_check_printing', 'hr_expense'],
     'auto_install': True,
     'data': [

@@ -3,7 +3,7 @@
 
 {
     'name': 'WMS Landed Costs',
-    'version': '1.1.180805',
+    'version': '1.1.181028',
     'summary': 'Landed Costs',
     'description': """
 Landed Costs Management

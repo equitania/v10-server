@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 {
     'name': 'Website Sale Digital - Sell digital products',
-    'version': '0.1.180805',
+    'version': '0.1.181028',
     'category': 'Website',
     'description': """
 Sell digital product using attachments to virtual products

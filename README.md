@@ -17,9 +17,9 @@ Unsere **deutschen Sprachübersetzungen unterscheiden** sich in Details von den 
 
 Unser Fork wird regelmäßig mit dem Hauptodoo Fork abgeglichen.
 
-`Aktuelle Buildversion: 20181021`
+`Aktuelle Buildversion: 20181028`
 
-`Letzer Abgleich: 21.10.2018`
+`Letzer Abgleich: 28.10.2018`
 
 Dieser Fork obliegt der <a href="https://de.wikipedia.org/wiki/GNU_Lesser_General_Public_License">GNU LESSER GENERAL PUBLIC LICENSE</a> wie das Ursprungssystem <a href="https://www.odoo.com">Odoo</a> selbst.
 
@@ -37,5 +37,5 @@ Für eine Installation können Sie im Odoo Kochbuch den Einstieg nachlesen.
 [Odoo Kochbuch](https://leanpub.com/odoo-kochbuch/read_sample)  
   
 [Einstieg in Odoo CE](https://leanpub.com/odoo-ce/read_sample)  
-
+  
 Weitere Informationen unter [Myodoo.de](https://www.myodoo.de) und im [Wiki](https://equitania.atlassian.net/wiki/spaces/MW/overview).

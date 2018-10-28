@@ -4,7 +4,7 @@
 
 {
     'name': 'Attendances',
-    'version': '2.0.180805',
+    'version': '2.0.181028',
     'category': 'Human Resources',
     'sequence': 81,
     'summary': 'Manage employee attendances',
