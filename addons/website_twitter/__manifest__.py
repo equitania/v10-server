@@ -6,7 +6,7 @@
     'category': 'Website',
     'summary': 'Add twitter scroller snippet in website builder',
     'website': 'https://www.odoo.com/page/website-builder',
-    'version': '1.0.181028',
+    'version': '1.0.181111',
     'description': """
 Display best tweets
 ========================
