@@ -3,4 +3,5 @@
 "base.lang_en","English","en_US","en","Left-to-Right","[3,0]",".",",","%m/%d/%Y","%H:%M:%S","True"
 "base.lang_fr","French / Français","fr_FR","fr","Left-to-Right","[3,0]",","," ","%d/%m/%Y","%H:%M:%S","True"
 "base.lang_es","Spanish / Español","es_ES","es","Left-to-Right","[3,0]",",",".","%d/%m/%Y","%H:%M:%S","True"
-base.lang_it,"Italian / Italiano","it_IT","it","Left-to-Right","[3,0]",",",".","%d/%m/%Y","%H:%M:%S","True"
+"base.lang_it","Italian / Italiano","it_IT","it","Left-to-Right","[3,0]",",",".","%d/%m/%Y","%H:%M:%S","True"
+"base.lang_de_CH","German (CH) / Deutsch (CH)","de_CH","de_CH","Left-to-Right","[3,0]",".","'","%d.%m.%Y","%H:%M:%S","True"
