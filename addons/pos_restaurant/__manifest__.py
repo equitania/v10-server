@@ -4,7 +4,7 @@
 
 {
     'name': 'Restaurant',
-    'version': '1.0.180805',
+    'version': '1.0.181117',
     'category': 'Point of Sale',
     'sequence': 6,
     'summary': 'Restaurant extensions for the Point of Sale ',

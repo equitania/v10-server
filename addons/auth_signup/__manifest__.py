@@ -7,7 +7,7 @@
 Allow users to sign up and reset their password
 ===============================================
     """,
-    'version': '1.0.180826',
+    'version': '1.0.181117',
     'category': 'Extra Tools',
     'auto_install': True,
     'depends': [
