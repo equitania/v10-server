@@ -7,6 +7,7 @@ Website portal for Project and Tasks
 ====================================
     """,
     'category': 'Website',
+    'version': '1.0.190103',
     'depends': ['project', 'website_portal'],
     'data': [
         'security/project_security.xml',
