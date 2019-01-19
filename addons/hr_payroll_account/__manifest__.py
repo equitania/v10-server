@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Payroll Accounting',
-    'version': '1.0.180805',
+    'version': '1.0.190119',
     'category': 'Human Resources',
     'description': """
 Generic Payroll system Integrated with Accounting.
