@@ -2,7 +2,7 @@
 
 {
     'name': 'Online Events',
-    'version': '1.0.181028',
+    'version': '1.0.190202',
     'category': 'Marketing',
     'sequence': 135,
     'summary': 'Schedule, Promote and Sell Events',
