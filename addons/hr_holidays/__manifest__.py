@@ -3,7 +3,7 @@
 
 {
     'name': 'Leave Management',
-    'version': '1.5.190106',
+    'version': '1.5.190224',
     'category': 'Human Resources',
     'sequence': 27,
     'summary': 'Holidays, Allocation and Leave Requests',
