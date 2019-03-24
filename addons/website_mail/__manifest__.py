@@ -5,7 +5,7 @@
     'name': 'Website Mail',
     'category': 'Hidden',
     'summary': 'Website Module for Mail',
-    'version': '0.1.180826',
+    'version': '0.1.190324',
     'description': """Glue module holding mail improvements for website.""",
     'depends': ['website', 'mail'],
     'data': [

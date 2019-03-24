@@ -3,7 +3,7 @@
 
 {
     'name': 'Inventory Management',
-    'version': '1.1.190224',
+    'version': '1.1.190324',
     'summary': 'Inventory, Logistics, Warehousing',
     'description': """
 Manage multi-warehouses, multi- and structured stock locations
