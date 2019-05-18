@@ -6,7 +6,7 @@
     'category': 'Sales',
     'website': 'https://www.odoo.com/page/website-builder',
     'summary': 'Publish Your Channel of Resellers',
-    'version': '1.0.180922',
+    'version': '1.0.190518',
     'description': """
 Publish and Assign Partner
 ==========================
