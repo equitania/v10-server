@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Project Rating',
-    'version': '1.0.180805',
+    'version': '1.0.190615',
     'category': 'Project',
     'description': """
 This module Allows a customer to give rating on Project.

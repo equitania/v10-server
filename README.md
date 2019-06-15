@@ -17,7 +17,7 @@ Unsere **deutschen Sprachübersetzungen unterscheiden** sich in Details von den 
 
 Unser Fork wird regelmäßig mit dem Hauptodoo Fork abgeglichen.
 
-`Letzer Abgleich: 18.05.2019`
+`Letzer Abgleich: 15.06.2019`
 
 Dieser Fork obliegt der <a href="https://de.wikipedia.org/wiki/GNU_Lesser_General_Public_License">GNU LESSER GENERAL PUBLIC LICENSE</a> wie das Ursprungssystem <a href="https://www.odoo.com">Odoo</a> selbst.
 
