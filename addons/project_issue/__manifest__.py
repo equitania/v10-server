@@ -3,7 +3,7 @@
 
 {
     'name': 'Issue Tracking',
-    'version': '1.0.180805',
+    'version': '1.0.190619',
     'category': 'Project',
     'sequence': 40,
     'summary': 'Support, Bug Tracker, Helpdesk',
@@ -30,5 +30,5 @@ It allows the manager to quickly check the issues, assign them and decide on the
         'views/project_config_settings_views.xml',
     ],
     'demo': ['data/project_issue_demo.xml'],
-    'application': True,
+    'application': False,
 }
