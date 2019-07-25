@@ -3,7 +3,7 @@
 
 {
     'name': 'Barcode Scanner Hardware Driver',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Point of Sale',
     'sequence': 6,
     'summary': 'Hardware Driver for Barcode Scanners',

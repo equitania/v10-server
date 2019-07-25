@@ -4,7 +4,7 @@
     'sequence': 55,
     'summary': 'Sell Your Products Online',
     'website': 'https://www.odoo.com/page/e-commerce',
-    'version': '1.0.190713',
+    'version': '1.0.190724',
     'description': """
 Odoo E-Commerce
 ==================

@@ -4,7 +4,7 @@
 
 {
     'name': 'Database Anonymization',
-    'version': '1.0.180826',
+    'version': '1.0.190724',
     'category': 'Extra Tools',
     'description': """
 This module allows you to anonymize a database.

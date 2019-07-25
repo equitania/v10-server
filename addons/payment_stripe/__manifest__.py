@@ -4,7 +4,7 @@
     'name': 'Stripe Payment Acquirer',
     'category': 'Hidden',
     'summary': 'Payment Acquirer: Stripe Implementation',
-    'version': '1.0.180826',
+    'version': '1.0.190724',
     'description': """Stripe Payment Acquirer""",
     'depends': ['payment'],
     'data': [

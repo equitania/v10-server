@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Accounting and Finance',
-    'version': '1.1.180805',
+    'version': '1.1.190724',
     'category': 'Accounting',
     'sequence': 35,
     'summary': 'Financial and Analytic Accounting',

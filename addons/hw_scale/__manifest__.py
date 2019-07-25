@@ -3,6 +3,7 @@
 
 {
     'name': 'Weighing Scale Hardware Driver',
+    'version': '1.0.190724',
     'category': 'Point of Sale',
     'sequence': 6,
     'summary': 'Hardware Driver for Weighing Scales',

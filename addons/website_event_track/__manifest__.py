@@ -6,7 +6,7 @@
     'category': 'Marketing',
     'summary': 'Sponsors, Tracks, Agenda, Event News',
     'website': 'https://www.odoo.com/page/events',
-    'version': '1.0.181028',
+    'version': '1.0.190724',
     'description': """
 Online Advanced Events
 ======================

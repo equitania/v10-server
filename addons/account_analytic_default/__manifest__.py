@@ -3,7 +3,7 @@
 
 {
     'name': 'Account Analytic Defaults',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Accounting',
     'description': """
 Set default values for your analytic accounts.

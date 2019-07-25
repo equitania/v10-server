@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Attachments List and Document Indexation',
-    'version': '2.1.180805',
+    'version': '2.1.190724',
     'category': 'Document Management',
     'description': """
 Attachments list and document indexation

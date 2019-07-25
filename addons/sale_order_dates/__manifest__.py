@@ -4,7 +4,7 @@
 
 {
     'name': 'Dates on Sales Order',
-    'version': '1.1.180805',
+    'version': '1.1.190724',
     'category': 'Sales',
     'description': """
 Add additional date information to the sales order.

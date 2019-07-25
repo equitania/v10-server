@@ -13,7 +13,7 @@ time it takes to load a POS session with a lot of products.
 
     'website': "https://www.odoo.com/page/point-of-sale",
     'category': 'Point Of Sale',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'depends': ['point_of_sale'],
     'data': [
         'data/pos_cache_data.xml',

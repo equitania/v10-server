@@ -3,7 +3,7 @@
 
 {
     'name': 'Warehouse Management: Waves',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Warehouse',
     'description': """
 This module adds the picking wave option in warehouse management

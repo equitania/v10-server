@@ -9,7 +9,7 @@ Easily send mass mailing to your leads, opportunities or customers. Track
 marketing campaigns performance to improve conversion rates. Design
 professional emails and reuse templates in a few clicks.
     """,
-    'version': '2.0.181021',
+    'version': '2.0.190724',
     'sequence': 110,
     'website': 'https://www.odoo.com/page/mailing',
     'category': 'Marketing',

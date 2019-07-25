@@ -3,7 +3,7 @@
 
 {
     'name': 'Assets Management',
-    'version' : '1.1.190615',
+    'version' : '1.1.190724',
     'depends': ['account_accountant'],
     'description': """
 Assets management

@@ -4,7 +4,7 @@
 
 {
     'name': 'Associations Management',
-    'version': '0.1.180805',
+    'version': '0.1.190724',
     'category': 'Marketing',
     'description': """
 This module is to configure modules related to an association.

@@ -3,7 +3,7 @@
 
 {
     'name': 'Portal',
-    'version': '1.190324',
+    'version': '1.190724',
     'depends': [
         'base',
         'auth_signup',

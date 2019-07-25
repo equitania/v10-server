@@ -3,7 +3,7 @@
 
 {
     'name': 'Productivity',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Tools',
     'description': """
 This module allows users to create their own notes inside Odoo

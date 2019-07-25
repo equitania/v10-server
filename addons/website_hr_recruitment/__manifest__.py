@@ -4,7 +4,7 @@
 {
     'name': 'Online Jobs',
     'category': 'Website',
-    'version': '1.0.190427',
+    'version': '1.0.190724',
     'summary': 'Job Descriptions And Application Forms',
     'description': """
 Odoo Contact Form

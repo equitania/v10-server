@@ -3,7 +3,7 @@
 
 {
     'name': 'Collaborative Pads',
-    'version': '2.0.180805',
+    'version': '2.0.190724',
     'category': 'Extra Tools',
     'description': """
 Adds enhanced support for (Ether)Pad attachments in the web client.

@@ -6,7 +6,7 @@
     'description': """
 Add a snippet in the website builder to subscribe a mass_mailing list
     """,
-    'version': '1.0.190615',
+    'version': '1.0.190724',
     'category': 'Marketing',
     'depends': ['website', 'mass_mailing'],
     'data': [

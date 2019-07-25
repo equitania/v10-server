@@ -3,7 +3,7 @@
 
 {
     'name': 'Opportunity to Quotation',
-    'version': '1.0.181007',
+    'version': '1.0.190724',
     'category': 'Hidden',
     'description': """
 This module adds a shortcut on one or several opportunity cases in the CRM.

@@ -2,7 +2,7 @@
 
 {
     'name' : 'Authentication via LDAP',
-    'version': '1.0.190103',
+    'version': '1.0.190724',
     'depends' : ['base', 'base_setup'],
     #'description': < auto-loaded from README file
     'category' : 'Extra Tools',

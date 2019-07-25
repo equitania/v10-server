@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Lead to Issue',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'summary': 'Create Issues from Leads',
     'sequence': '19',
     'category': 'Project',

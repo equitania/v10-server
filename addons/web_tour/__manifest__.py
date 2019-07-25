@@ -9,7 +9,7 @@ Odoo Web tours.
 ========================
 
 """,
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'depends': ['web'],
     'data': [
         'security/ir.model.access.csv',

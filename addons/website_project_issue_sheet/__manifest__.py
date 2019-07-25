@@ -4,7 +4,7 @@
 
 {
     'name': 'Timesheet on Website Project Issue',
-    'version': '0.1',
+    'version': '1.0.190724',
     'complexity': 'easy',
     'description': """
 Add timesheet support on issue in the frontend.

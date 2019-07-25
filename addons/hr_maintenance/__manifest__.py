@@ -2,7 +2,7 @@
 
 {
     'name': 'HR - Equipments',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'sequence': 125,
     'description': """
         Bridge between HR and Maintenance.""",

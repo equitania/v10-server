@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Website Rating Project Issue',
-    'version': '0.1',
+    'version': '1.0.190724',
     'category': 'Project',
     'complexity': 'easy',
     'description': """

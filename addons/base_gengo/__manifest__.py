@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Automated Translations through Gengo API',
-    'version': '1.0.190615',
+    'version': '1.0.190724',
     'category': 'Tools',
     'description': """
 Automated Translations through Gengo API

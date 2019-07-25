@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Team Page',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Human Resources',
     'summary': 'Present Your Team',
     'description': """

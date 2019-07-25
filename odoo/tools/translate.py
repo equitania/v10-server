@@ -111,7 +111,7 @@ _LOCALE2WIN32 = {
     #'es_VE': 'Spanish_Spain',
     #'sv_SE': 'Swedish_Sweden',
     #'ta_IN': 'English_Australia',
-    #'th_TH': 'Thai_Thailand',
+    'th_TH': 'Thai_Thailand',
     #'tr_TR': 'Turkish_Turkey',
     #'uk_UA': 'Ukrainian_Ukraine',
     #'vi_VN': 'Vietnamese_Viet Nam',

@@ -4,7 +4,7 @@
 
 {
     'name': 'Point of Sale Discounts',
-    'version': '1.0.190615',
+    'version': '1.0.190724',
     'category': 'Point of Sale',
     'sequence': 6,
     'summary': 'Simple Discounts in the Point of Sale ',

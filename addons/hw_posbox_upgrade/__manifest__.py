@@ -3,7 +3,7 @@
 
 {
     'name': 'PosBox Software Upgrader',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Point of Sale',
     'website': 'https://www.odoo.com/page/point-of-sale',
     'sequence': 6,

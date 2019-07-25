@@ -3,7 +3,7 @@
 
 {
     'name' : 'Account Tax Cash Basis',
-    'version' : '1.1.180805',
+    'version' : '1.1.190724',
     'summary': 'Allow to have cash basis on tax',
     'sequence': 4,
     'description': """

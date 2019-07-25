@@ -4,7 +4,7 @@
 
 {
     'name': 'Contacts Directory',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Tools',
     'summary': 'Customers, Vendors, Partners,...',
     'description': """

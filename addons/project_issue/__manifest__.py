@@ -3,7 +3,7 @@
 
 {
     'name': 'Issue Tracking',
-    'version': '1.0.190619',
+    'version': '1.0.190724',
     'category': 'Project',
     'sequence': 40,
     'summary': 'Support, Bug Tracker, Helpdesk',

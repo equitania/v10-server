@@ -3,7 +3,7 @@
 
 {
     'name': 'PosBox Homepage',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Point of Sale',
     'sequence': 6,
     'website': 'https://www.odoo.com/page/point-of-sale',

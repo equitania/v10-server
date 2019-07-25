@@ -3,7 +3,7 @@
 
 {
     'name': 'Email Gateway',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'depends': ['mail'],
     'category': 'Extra Tools',
     'description': """

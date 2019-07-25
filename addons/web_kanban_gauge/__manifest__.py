@@ -7,7 +7,7 @@
     'description': """
 This widget allows to display gauges using d3 library.
 """,
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'depends': ['web_kanban'],
     'data' : [
         'views/web_kanban_gauge_templates.xml',

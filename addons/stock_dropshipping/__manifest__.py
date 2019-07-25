@@ -3,7 +3,7 @@
 
 {
     'name': 'Drop Shipping',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Warehouse',
     'summary': 'Drop Shipping',
     'description': """

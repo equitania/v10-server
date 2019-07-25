@@ -3,7 +3,7 @@
 
 {
     'name': 'Multi Language Chart of Accounts',
-    'version': '1.1.180805',
+    'version': '1.1.190724',
     'category': 'Localization',
     'description': """
     * Multi language support for Chart of Accounts, Taxes, Tax Codes, Journals,

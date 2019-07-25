@@ -3,7 +3,7 @@
     'category': 'Website',
     'website': 'https://www.odoo.com/page/website-builder',
     'summary': 'Create Leads From Contact Form',
-    'version': '2.0.180805',
+    'version': '2.0.190724',
     'description': """
 Odoo Contact Form
 ====================

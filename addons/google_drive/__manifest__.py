@@ -3,7 +3,7 @@
 
 {
     'name': 'Google Drive™ integration',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Extra Tools',
     'installable': True,
     'auto_install': False,

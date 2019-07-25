@@ -6,7 +6,7 @@
 
 {
     'name': 'Accounting Consistency Tests',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Accounting',
     'website': 'https://www.odoo.com/page/accounting',
     'description': """

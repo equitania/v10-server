@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Issue Rating',
-    'version': '1.0.180805',
+    'version': '1.0.190724',
     'category': 'Project',
     'description': """
 This module allows a customer to give rating on Project Issue.

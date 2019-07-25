@@ -5,7 +5,7 @@
     'name': 'Website Partner',
     'category': 'Website',
     'summary': 'Partner Module for Website',
-    'version': '0.1.180805',
+    'version': '0.1.190724',
     'description': """Base module holding website-related stuff for partner model""",
     'depends': ['website'],
     'data': [

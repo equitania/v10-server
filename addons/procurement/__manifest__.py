@@ -3,7 +3,7 @@
 
 {
     'name': 'Procurements',
-    'version': '1.0.181028',
+    'version': '1.0.190724',
     'website': 'https://www.odoo.com/page/manufacturing',
     'category' : 'Hidden',
     'depends' : ['base', 'product'],

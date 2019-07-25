@@ -3,7 +3,7 @@
 {
     'name': 'Website Project Issue',
     'category': 'Hidden',
-    'version': '0.1.180805',
+    'version': '0.1.190724',
     'complexity': 'easy',
     'description': """
 This module adds project issues inside your account's page on website if project_issue and website_portal are installed.

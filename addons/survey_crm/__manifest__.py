@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Survey CRM',
-    'version': '2.0.180805',
+    'version': '2.0.190724',
     'category': 'Marketing',
     'complexity': 'easy',
     'website': 'https://www.odoo.com/page/survey',
