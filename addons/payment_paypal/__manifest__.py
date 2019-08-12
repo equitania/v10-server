@@ -4,7 +4,7 @@
     'name': 'Paypal Payment Acquirer',
     'category': 'Accounting',
     'summary': 'Payment Acquirer: Paypal Implementation',
-    'version': '1.0.190724',
+    'version': '1.0.190812',
     'description': """Paypal Payment Acquirer""",
     'depends': ['payment'],
     'data': [

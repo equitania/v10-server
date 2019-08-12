@@ -6,7 +6,7 @@ Create short and trackable URLs.
 =====================================================
 
         """,
-    'version': '1.0.190724',
+    'version': '1.0.190812',
     'depends': ['utm'],
     'data': [
         'views/link_tracker.xml',
