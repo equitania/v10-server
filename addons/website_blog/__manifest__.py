@@ -7,7 +7,7 @@
     'sequence': 140,
     'website': 'https://www.odoo.com/page/blog-engine',
     'summary': 'News, Blogs, Announces, Discussions',
-    'version': '1.0.190724',
+    'version': '1.0.190831',
     'description': """
 Odoo Blog
 ============

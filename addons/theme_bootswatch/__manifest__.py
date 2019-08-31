@@ -7,7 +7,7 @@
     'description': 'This theme module is exclusively for master to keep the support of Bootswatch themes which were previously part of the website module in 8.0.',
     'category': 'Theme',
     'sequence': 900,
-    'version': '1.0.180805',
+    'version': '1.0.190831',
     'depends': ['website'],
     'data': [
         'data/theme_bootswatch_data.xml',
