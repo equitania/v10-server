@@ -3,7 +3,7 @@
 
 {
     'name': 'Web Editor',
-    'version': '1.0.190825',
+    'version': '1.0.190922',
     'category': 'Hidden',
     'description': """
 Odoo Web Editor widget.

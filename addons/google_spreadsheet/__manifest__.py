@@ -3,7 +3,7 @@
 
 {
     'name': 'Google Spreadsheet',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'category': 'Extra Tools',
     'description': """
 The module adds the possibility to display data from Odoo in Google Spreadsheets in real time.

@@ -4,7 +4,7 @@
     'name': 'Transfer Payment Acquirer',
     'category': 'Accounting',
     'summary': 'Payment Acquirer: Transfer Implementation',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'description': """Transfer Payment Acquirer""",
     'depends': ['payment'],
     'data': [

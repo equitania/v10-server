@@ -7,7 +7,7 @@
     'sequence': 50,
     'summary': 'Build Your Enterprise Website',
     'website': 'https://www.odoo.com/page/website-builder',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'description': """
 Odoo Website CMS
 ===================

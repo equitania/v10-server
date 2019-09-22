@@ -5,7 +5,7 @@
     'category': 'Website',
     'summary': 'Sales',
     'website': 'https://www.odoo.com/page/quote-builder',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'description': """
 Odoo Sale Quote Roller
 =========================

@@ -4,7 +4,7 @@
 
 {
     'name': 'Timesheets',
-    'version': '1.0.190812',
+    'version': '1.0.190922',
     'category': 'Human Resources',
     'sequence': 23,
     'description': """

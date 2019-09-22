@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Base import module',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'description': """
 Import a custom data module
 ===========================

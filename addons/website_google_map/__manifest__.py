@@ -4,7 +4,7 @@
     'name': 'Website Google Map',
     'category': 'Website',
     'summary': '',
-    'version': '1.0.180805',
+    'version': '1.0.190922',
     'description': """
 Odoo Website Google Map
 ==========================

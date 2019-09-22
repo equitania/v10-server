@@ -4,7 +4,7 @@
 {
     'name': 'eCommerce Optional Products',
     'category': 'Website',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'website': 'https://www.odoo.com/page/e-commerce',
     'description': """
 Odoo E-Commerce

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Customer Rating',
-    'version': '1.0.190812',
+    'version': '1.0.190922',
     'category': 'Productivity',
     'description': """
 This module allows a customer to give rating.

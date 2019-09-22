@@ -1,7 +1,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Purchase Requisitions',
-    'version': '1.0.190724',
+    'version': '1.0.190922',
     'category': 'Purchases',
     'website': 'https://www.odoo.com/page/purchase',
     'description': """
