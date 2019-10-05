@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Slides',
-    'version': '1.0.190724',
+    'version': '1.0.191005',
     'sequence': 145,
     'summary': 'Share and Publish Videos, Presentations and Documents',
     'category': 'Website',
